@@ -8,60 +8,53 @@ class PagesController extends Controller
 {
     public function index()
         {
-            $title = 'Welcome to index page!!!';
-            return view ('pages.index')->with('title', $title);
+          
+            return view ('pages.index');
         }
 
 
         public function menu()
         {
 
-            $data=array(
-                'title' => 'This is Services Page',
-                'services' => ['Web Design', 'Programming', 'SEO']
-            );
-            return view ('pages.menu')-> with( $data);        
+         
+            return view ('pages.menu');        
         }
 
         public function about()
         {
-            $data=array(
-                'title' => 'This is Services Page',
-                'services' => ['Web Design', 'Programming', 'SEO']
-            );
-            return view ('pages.about')-> with( $data);
+          
+            return view ('pages.about');
         }
 
 
         public function gallery()
         {
 
-            $data=array(
-                'title' => 'This is Services Page',
-                'services' => ['Web Design', 'Programming', 'SEO']
-            );
-            return view ('pages.gallery')-> with( $data);        
+           
+            return view ('pages.gallery');        
         }
     
         public function contact()
         {
 
-            $data=array(
-                'title' => 'This is Services Page',
-                'services' => ['Web Design', 'Programming', 'SEO']
-            );
-            return view ('pages.contact')-> with( $data);        
+          
+            return view ('pages.contact');        
         }
 
 
         public function blog()
         {
 
-            $data=array(
-                'title' => 'This is Services Page',
-                'services' => ['Web Design', 'Programming', 'SEO']
-            );
-            return view ('pages.blog')-> with( $data);        
+       
+            return view ('pages.blog');        
+        }
+
+
+        public function admin()
+        {
+
+         
+            return view ('/admin/pages.index');        
         }
     //
 }
