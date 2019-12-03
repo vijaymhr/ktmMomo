@@ -56,5 +56,13 @@ class PagesController extends Controller
          
             return view ('/admin/pages.index');        
         }
+
+
+        public function login()
+        {
+
+         
+            return view ('/admin/inc.login');        
+        }
     //
 }

@@ -1,41 +1,78 @@
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-	<meta name="description" content="">
-	<meta name="author" content="">
+<!DOCTYPE html>
+<html>
 
-    <title>Admin Login | Kathmandu Mo:Mo House Ltd.</title>
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>Blank Page | Bootstrap Based Admin Template - Material Design</title>
+    <!-- Favicon-->
+    <link rel="icon" href="../../favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+
+    <!-- Bootstrap Core Css -->
+    <link href="{{asset('admin_assets/css/bootstrap.css')}}" rel="stylesheet">
+
+    <!-- Waves Effect Css -->
+    <link href="{{asset('admin_assets/css/waves.css')}}" rel="stylesheet" />
+
+    <!-- Animation Css -->
+    <link href="{{asset('admin_assets/css/animate.css')}}" rel="stylesheet" />
+
+    <!-- Custom Css -->
+    <link href="{{asset('admin_assets/css/style.css')}}" rel="stylesheet">
+
+
+	<link href="{{asset('admin_assets/css/all-themes.css')}}" rel="stylesheet">
+
+	<!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
+	
+		
+</head>
     
 
-<link rel="stylesheet" href="{{asset('admin_assets/css/font-awesome.min.css')}}">
-<link rel="stylesheet" href="{{asset('admin_assets/css/bootstrap.min.css')}}">
-<link rel="stylesheet" href="{{asset('admin_assets/css/dataTables.bootstrap.min.css')}}">
-<link rel="stylesheet" href="{{asset('admin_assets/css/bootstrap-social.css')}}">
-<link rel="stylesheet" href="{{asset('admin_assets/css/bootstrap-select.css')}}">
-<link rel="stylesheet" href="{{asset('admin_assets/css/fileinput.min.css')}}">
-<link rel="stylesheet" href="{{asset('admin_assets/css/awesome-bootstrap-checkbox.css')}}">
-<link rel="stylesheet" href="{{asset('admin_assets/css/style.css')}}">
-</head>
+
+
 
 <body>
 
+
+
+	
+
+	@include('admin/inc.header')
+	@include('admin/inc.sidebar')
+	
         @yield('content')
 
 
         <!-- Loading Scripts -->
         
 
-<script src="{{asset('js/jquery.min.js')}}"></script>
-<script src="{{asset('js/bootstrap-select.min.js')}}"></script>
-<script src="{{asset('js/bootstrap.min.js')}}"></script>
-<script src="{{asset('js/jquery.dataTables.min.js')}}"></script>
-<script src="{{asset('js/dataTables.bootstrap.min.js')}}"></script>
-<script src="{{asset('js/Chart.min.js')}}"></script>
-<script src="{{asset('js/fileinput.js')}}"></script>
-<script src="{{asset('js/chartData.js')}}"></script>
-<script src="{{asset('js/main.js')}}"></script>
 
+
+ <!-- Jquery Core Js -->
+ <script src="{{asset('admin_assets/js/jquery.min.js')}}"></script>
+
+ <!-- Bootstrap Core Js -->
+ <script src="{{asset('admin_assets/js/bootstrap.js')}}"></script>
+
+ <!-- Select Plugin Js -->
+ <script src="{{asset('admin_assets/js/bootstrap-select.js')}}"></script>
+
+ <!-- Slimscroll Plugin Js -->
+ <script src="{{asset('admin_assets/js/jquery.slimscroll.js')}}"></script>
+
+ <!-- Waves Effect Plugin Js -->
+ <script src="{{asset('admin_assets/js/waves.js')}}"></script>
+
+ <!-- Custom Js -->
+ <script src="{{asset('admin_assets/js/admin.js')}}"></script>
+
+ <!-- Demo Js -->
+ <script src="{{asset('admin_assets/js/demo.js')}}"></script>
 </body>
 
 </html>

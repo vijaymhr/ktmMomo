@@ -26,6 +26,7 @@ Route::get('/blog', 'PagesController@blog');
 
 Route::get('/admin', 'PagesController@admin');
 
+Route::get('/admin/login', 'PagesController@login');
 
 Auth::routes();
 
