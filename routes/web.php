@@ -33,6 +33,15 @@ Route::get('/dash', 'AdminController@dashboard')->name('dash');
 
 
 Route::get('/admin/foodItems', 'PagesController@foodItems');
+Route::get('/admin/orders', 'PagesController@orders');
+Route::get('/admin/contactUsManage', 'PagesController@contactUsManage');
+
+Route::get('/admin/feedback', 'PagesController@feedback');
+
+Route::get('/admin/blogs', 'PagesController@blogs');
+
+Route::get('/admin/foodGallery', 'PagesController@foodGallery');
+
 
 Auth::routes();
 

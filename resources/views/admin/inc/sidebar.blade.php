@@ -26,7 +26,7 @@
             <ul class="list">
                 <li class="header">MAIN NAVIGATION</li>
                 <li class="active">
-                    <a href="index.html">
+                    <a href="/admin">
                         <i class="material-icons">home</i>
                         <span>Dashboard</span>
                     </a>
@@ -38,35 +38,35 @@
                     </a>
                 </li>
                 <li>
-                    <a href="pages/helper-classes.html">
+                    <a href="/admin/orders">
                         <i class="material-icons">shopping_cart</i>
                         <span>Orders</span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="pages/helper-classes.html">
+                    <a href="/admin/contactUsManage">
                         <i class="material-icons">my_location</i>
                         <span>Contact Us</span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="pages/helper-classes.html">
+                    <a href="/admin/feedback">
                         <i class="material-icons">feedback</i>
                         <span>Contact Us Feedbacks</span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="pages/helper-classes.html">
+                    <a href="/admin/blogs">
                         <i class="material-icons">vpn_lock</i>
                         <span>Blog</span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="pages/helper-classes.html">
+                    <a href="/admin/foodGallery">
                         <i class="material-icons">photo_library</i>
                         <span>Image Gallery</span>
                     </a>

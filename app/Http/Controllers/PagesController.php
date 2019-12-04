@@ -52,7 +52,7 @@ class PagesController extends Controller
 
      
 
-
+//admin Pages Controller starts here
         public function login()
         {
 
@@ -75,5 +75,43 @@ class PagesController extends Controller
          
             return view ('/admin/pages.dashboard');        
         }
-    //
+
+        public function orders()
+        {
+
+         
+            return view ('admin/pages.orders');        
+        }
+
+        public function contactUsManage()
+        {
+
+         
+            return view ('admin/pages.contactUsManage');        
+        }
+
+        public function feedback()
+        {
+
+         
+            return view ('admin/pages.feedback');        
+        }
+
+        public function blogs()
+        {
+
+         
+            return view ('admin/pages.blogs');        
+        }
+
+        public function foodGallery()
+        {
+
+         
+            return view ('admin/pages.foodGallery');        
+        }
+
+        
+
+    //admin Controller pages ends here
 }
