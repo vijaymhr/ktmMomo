@@ -24,9 +24,13 @@ Route::get('/about', 'PagesController@about');
 Route::get('/contact', 'PagesController@contact');
 Route::get('/blog', 'PagesController@blog');
 
-Route::get('/admin', 'PagesController@admin');
 
 Route::get('/admin/login', 'PagesController@login');
+
+Route::get('/admin', 'PagesController@dashboard');
+
+Route::get('/dash', 'AdminController@dashboard')->name('dash');
+
 
 Route::get('/admin/foodItems', 'PagesController@foodItems');
 

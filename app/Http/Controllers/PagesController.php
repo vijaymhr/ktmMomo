@@ -50,12 +50,7 @@ class PagesController extends Controller
         }
 
 
-        public function admin()
-        {
-
-         
-            return view ('/admin/pages.index');        
-        }
+     
 
 
         public function login()
@@ -70,7 +65,15 @@ class PagesController extends Controller
         {
 
          
-            return view ('/admin/pages.foodItems');        
+            return view ('admin/pages.foodItems');        
+        }
+
+
+        public function dashboard()
+        {
+
+         
+            return view ('/admin/pages.dashboard');        
         }
     //
 }

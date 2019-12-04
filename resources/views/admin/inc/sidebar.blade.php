@@ -32,7 +32,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="foodItems">
+                    <a href="/admin/foodItems">
                         <i class="material-icons">local_dining</i>
                         <span>Food Items</span>
                     </a>
