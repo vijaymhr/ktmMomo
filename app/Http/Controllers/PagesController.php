@@ -64,5 +64,13 @@ class PagesController extends Controller
          
             return view ('/admin/inc.login');        
         }
+
+
+        public function foodItems()
+        {
+
+         
+            return view ('/admin/pages.foodItems');        
+        }
     //
 }

@@ -28,6 +28,8 @@ Route::get('/admin', 'PagesController@admin');
 
 Route::get('/admin/login', 'PagesController@login');
 
+Route::get('/admin/foodItems', 'PagesController@foodItems');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
