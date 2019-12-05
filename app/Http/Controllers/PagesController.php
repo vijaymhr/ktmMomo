@@ -61,11 +61,11 @@ class PagesController extends Controller
         }
 
 
-        public function foodItems()
+        public function foods()
         {
 
          
-            return view ('admin/pages.foodItems');        
+            return view ('admin/pages.foods');        
         }
 
 

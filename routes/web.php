@@ -32,7 +32,7 @@ Route::get('/admin', 'PagesController@dashboard');
 Route::get('/dash', 'AdminController@dashboard')->name('dash');
 
 
-Route::get('/admin/foodItems', 'PagesController@foodItems');
+Route::get('/admin/foods', 'PagesController@foods');
 Route::get('/admin/orders', 'PagesController@orders');
 Route::get('/admin/contactUsManage', 'PagesController@contactUsManage');
 
@@ -46,3 +46,6 @@ Route::get('/admin/foodGallery', 'PagesController@foodGallery');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::resource('foods', 'FoodsController');
