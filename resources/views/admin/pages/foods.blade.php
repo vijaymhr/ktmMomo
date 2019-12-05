@@ -26,18 +26,26 @@
                             </li>
                         </ul>
                     </div>
+                    @include('inc.messages')
 
-                    @if(count($foods) >1 )
+                    @if(count($foods) > 0 )
                         @foreach ($foods as $food)
-                            
+
+
                     <div class="body">
-                    <h3>{{$food -> foodTitle}}</h3>
+
+                    <h3>
+                        <a href="/foods/{{$food->id}}">{{$food -> foodTitle}}
+                        </a>
+                    </h3>
                     <small>Added on: {{$food->created_at}}</small>
                         
 
                         
                     </div>
                         @endforeach
+
+                        <div class="header">{{$foods->links()}}</div>
                     @else
 
                         <p> No Food Items Available. Please Add Food Items.</p>

@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
 
+
+
     <!-- Bootstrap Core Css -->
     <link href="{{asset('admin_assets/css/bootstrap.css')}}" rel="stylesheet">
 
@@ -27,8 +29,11 @@
 
 	<link href="{{asset('admin_assets/css/all-themes.css')}}" rel="stylesheet">
 
-	<!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
-	
+<!-- Wait Me Css -->
+<link href="{{asset('admin_assets/css/waitMe.css')}}" rel="stylesheet" />
+
+<!-- Bootstrap Select Css -->
+<link href="{{asset('admin_assets/css/bootstrap-select.css')}}" rel="stylesheet" />	
 		
 </head>
     
@@ -45,7 +50,14 @@
 	@include('admin/inc.header')
 	@include('admin/inc.sidebar')
 	
+	<div class="body">
+
         @yield('content')
+
+			
+				
+			</div>
+	</body>
 
 
         <!-- Loading Scripts -->
@@ -70,9 +82,16 @@
 
  <!-- Custom Js -->
  <script src="{{asset('admin_assets/js/admin.js')}}"></script>
+ <script src="{{asset('admin_assets/js/basic-form-elements.js')}}"></script>
 
  <!-- Demo Js -->
  <script src="{{asset('admin_assets/js/demo.js')}}"></script>
-</body>
+
+  <!-- Autosize Plugin Js -->
+  <script src="{{asset('admin_assets/js/autosize.js')}}"></script>
+
+  <!-- Moment Plugin Js -->
+  <script src="{{asset('admin_assets/js/moment.js')}}"></script>
+
 
 </html>

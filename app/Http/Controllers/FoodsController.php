@@ -15,7 +15,8 @@ class FoodsController extends Controller
      */
     public function index()
     {
-        $foods= Food::all();
+        
+        $foods= Food::orderBy('foodTitle','desc')-> paginate(10);
       return view('admin/pages.foods')->with('foods', $foods);
     }
 
@@ -26,7 +27,7 @@ class FoodsController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin/pages.addFood');
     }
 
     /**
@@ -37,7 +38,25 @@ class FoodsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
+        $this->validate($request,
+        [
+            'foodTitle'=>'required',
+            'foodDesc'=>'required',
+            'price' => 'required'
+        ]);
+
+        //create add food items
+        $food=new Food;
+        $food->foodTitle=$request->input('foodTitle');
+        $food->foodDesc=$request->input('foodDesc');
+        $food->price=$request->input('price');
+        $food->save();
+
+        return redirect('/foods')->with('success', 'New Food Item Added');
+
+
+
     }
 
     /**
@@ -48,7 +67,8 @@ class FoodsController extends Controller
      */
     public function show($id)
     {
-        //
+        $food= Food::find($id);
+        return view ('admin/pages/showFood')->with ('food',$food);
     }
 
     /**
