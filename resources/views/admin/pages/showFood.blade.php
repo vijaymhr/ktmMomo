@@ -33,12 +33,18 @@
                             {{$food->price}}
 
 
-
+<br>
                         
-                    </div>
                      
-                    <hr>
                 <small>Written on: {{$food->created_at}}</small>
+            </div>
+
+                <hr>
+                <div class="header">
+                <a href="/foods/{{$food->id}}/edit" class="btn btn-success waves-effect"> 
+    <i class="material-icons">mode_edit</i>
+    <span>Edit Food Item</span></a>
+                </div>
                 </div>
             </div>
         </div>

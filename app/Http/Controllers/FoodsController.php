@@ -16,7 +16,7 @@ class FoodsController extends Controller
     public function index()
     {
         
-        $foods= Food::orderBy('foodTitle','desc')-> paginate(10);
+        $foods= Food::orderBy('created_at','desc')-> paginate(10);
       return view('admin/pages.foods')->with('foods', $foods);
     }
 
@@ -79,7 +79,8 @@ class FoodsController extends Controller
      */
     public function edit($id)
     {
-        //
+        $food= Food::find($id);
+        return view ('admin/pages/editFood')->with ('food',$food);
     }
 
     /**
@@ -91,7 +92,21 @@ class FoodsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $this->validate($request,
+        [
+            'foodTitle'=>'required',
+            'foodDesc'=>'required',
+            'price' => 'required'
+        ]);
+
+        //create add food items
+        $food=Food::find($id);
+        $food->foodTitle=$request->input('foodTitle');
+        $food->foodDesc=$request->input('foodDesc');
+        $food->price=$request->input('price');
+        $food->save();
+
+        return redirect('/foods')->with('success', 'Food Item Updated');
     }
 
     /**
