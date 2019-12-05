@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Food;
 
 class FoodsController extends Controller
 {
@@ -14,7 +15,8 @@ class FoodsController extends Controller
      */
     public function index()
     {
-        //
+        $foods= Food::all();
+      return view('admin/pages.foods')->with('foods', $foods);
     }
 
     /**

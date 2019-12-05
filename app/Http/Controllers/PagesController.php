@@ -65,7 +65,7 @@ class PagesController extends Controller
         {
 
          
-            return view ('admin/pages.foods');        
+            return view ('/admin/pages.foods');        
         }
 
 

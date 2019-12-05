@@ -4,12 +4,7 @@
 
 <section class="content">
     <div class="container-fluid">
-        <div class="block-header">
-            <h2>Food Items</h2>
-        </div>
-        <div class="block-header">
-            <h2>Food Items</h2>
-        </div>
+        
         
         <!-- Headings -->
         <div class="row clearfix">
@@ -17,7 +12,7 @@
                 <div class="card">
                     <div class="header">
                         <h2>
-                            HEADINGS
+                            Food Items Details
                         </h2>
                         <ul class="header-dropdown m-r--5">
                             <li class="dropdown">
@@ -31,33 +26,23 @@
                             </li>
                         </ul>
                     </div>
+
+                    @if(count($foods) >1 )
+                        @foreach ($foods as $food)
+                            
                     <div class="body">
-                        <h1>h1. AdminBSB Heading</h1>
-                        <p class="m-b-30">In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
+                    <h3>{{$food -> foodTitle}}</h3>
+                    <small>Added on: {{$food->created_at}}</small>
+                        
 
-                        <h2>h2. AdminBSB Heading</h2>
-                        <p class="m-t-10 m-b-30">In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
-
-                        <h3>h3. AdminBSB Heading</h3>
-                        <p class="m-t-15 m-b-30">
-                            In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
-                        </p>
-
-                        <h4>h4. AdminBSB Heading</h4>
-                        <p class="m-t-15 m-b-30">
-                            In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
-                        </p>
-
-                        <h5>h5. AdminBSB Heading</h5>
-                        <p class="m-t-15 m-b-30">
-                            In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
-                        </p>
-
-                        <h6>h6. AdminBSB Heading</h6>
-                        <p class="m-t-15">
-                            In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
-                        </p>
+                        
                     </div>
+                        @endforeach
+                    @else
+
+                        <p> No Food Items Available. Please Add Food Items.</p>
+                    @endif
+                    
                 </div>
             </div>
         </div>
