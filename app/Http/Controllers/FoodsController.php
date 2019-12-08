@@ -43,7 +43,7 @@ class FoodsController extends Controller
         [
             'foodTitle'=>'required',
             'foodDesc'=>'required',
-            'price' => 'required'
+            'price' => 'required | numeric'
         ]);
 
         //create add food items
@@ -106,7 +106,7 @@ class FoodsController extends Controller
         $food->price=$request->input('price');
         $food->save();
 
-        return redirect('/foods')->with('success', 'Food Item Updated');
+        return redirect('/foods')->with('success', 'Food Item Updated Successfully');
     }
 
     /**
@@ -117,6 +117,13 @@ class FoodsController extends Controller
      */
     public function destroy($id)
     {
-        //
+      $food=Food::find($id);
+      $food->delete();
+
+
+
+      return redirect('/foods')->with('success', 'Food Item Removed Successfully');
+
     }
 }
+

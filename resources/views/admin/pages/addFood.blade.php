@@ -66,12 +66,9 @@
                                     </div>
                                 </div>
 
-                                {{Form::button('<i class="material-icons">add</i> <span>Add Food</span>', ['type'=>'submit','class'=>'btn btn-success waves-effect'])}}
+                                {{Form::button('<i class="material-icons">add</i> <span>Add Food Item</span>', ['type'=>'submit','class'=>'btn btn-success waves-effect'])}}
 
-                                
-
-
-                        {!! Form::close() !!}
+                                 {!! Form::close() !!}
 
 
 
