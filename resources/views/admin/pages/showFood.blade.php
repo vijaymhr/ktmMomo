@@ -30,9 +30,26 @@
                             
                     <div class="body">
 
-                            {{$food->foodTitle}}
-                            {{$food->foodDesc}}
-                            {{$food->price}}
+                            <table class="table">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">Food Name</th>
+                                        <th scope="col">Food Description</th>
+                                        <th scope="col">Price</th>
+
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+
+                                      <tr>
+                                        <td>{{$food->foodTitle}}</td>
+                                        <td>{{$food->foodDesc}}</td>
+                                         <td>{{$food->price}}</td>
+                                         
+                                      </tr>
+                                     
+                                    </tbody>
+                                  </table>
 
 
 <br>

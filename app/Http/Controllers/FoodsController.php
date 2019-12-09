@@ -96,10 +96,10 @@ class FoodsController extends Controller
         [
             'foodTitle'=>'required',
             'foodDesc'=>'required',
-            'price' => 'required'
+            'price' => 'required | numeric' 
         ]);
 
-        //create add food items
+        //update food items
         $food=Food::find($id);
         $food->foodTitle=$request->input('foodTitle');
         $food->foodDesc=$request->input('foodDesc');
