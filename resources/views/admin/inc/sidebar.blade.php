@@ -45,9 +45,9 @@
                 </li>
 
                 <li>
-                    <a href="/admin/contactUsManage">
+                    <a href="/info">
                         <i class="material-icons">my_location</i>
-                        <span>Contact Us</span>
+                        <span>Address Info</span>
                     </a>
                 </li>
 

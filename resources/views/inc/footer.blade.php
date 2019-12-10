@@ -6,13 +6,18 @@
                 <h2 class="ftco-heading-2">
                   Kathmandu Mo:Mo
                 </h2>
-                 <p><span class="icon-map"></span>
-                  <span class="text">20/96 Oxford Terrace, Christchurch</span></p>
-                <p><span class="icon-phone2"></span>
-                  <span class="text"> 0210 348 459</span></p>
-                <p><span class="icon-paper-plane"></span>
-                  <span class="text">1@gmail.com</span></p>
+                @foreach ($infos as $info)
+                    
+                 <p><span class="fa fa-location-arrow"></span>
+                 <span class="text">Office | {{$info->adminAddress}}</span></p>
+                 <p><span class="fa fa-map-marker"></span>
+                  <span class="text">Shop | {{$info->shopAddress}}</span></p>
+                <p><span class="fa fa-phone"></span>
+                  <span class="text"> {{$info->phone}}</span></p>
+                <p><span class="fa fa-envelope"></span>
+                  <span class="text">{{{$info->email}}}</span></p>
 
+                  @endforeach
 
               </div>
             </div>

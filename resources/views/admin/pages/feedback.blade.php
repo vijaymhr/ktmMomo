@@ -48,9 +48,9 @@
                                                 
                                           <tr>
                                           <td>{{$feedback->fname}}</td>
-                                            <td>2</td>
-                                             <td>3</td>
-                                             <td>3</td>
+                                            <td>{{$feedback->email}}</td>
+                                             <td>{{$feedback->mobile}}</td>
+                                             <td>{{$feedback->message}}</td>
                                           </tr>
                                           @endforeach
 

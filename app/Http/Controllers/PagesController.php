@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Food;
+use App\Info;
 class PagesController extends Controller
 {
     public function index()
@@ -12,6 +13,8 @@ class PagesController extends Controller
 
           
             return view ('pages.index')->with('foods',$foods);
+
+            
         }
 
 

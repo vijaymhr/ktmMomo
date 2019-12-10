@@ -49,6 +49,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('foods', 'FoodsController');
 Route::resource('contact', 'FeedbackController');
 Route::resource('feedback', 'FeedbackAdminController');
+Route::resource('info', 'InfoController');
+
 
 
 
