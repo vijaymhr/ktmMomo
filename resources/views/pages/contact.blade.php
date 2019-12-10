@@ -51,21 +51,28 @@
             <div class="row d-flex align-items-stretch no-gutters">
                 <div class="col-md-6 pt-5 px-2 pb-2 p-md-5 order-md-last">
                     <h2 class="h4 mb-2 mb-md-5 font-weight-bold">Contact Us</h2>
-                    <form action="#">
+                    <form action="{{action('FeedbackController@store')}}" method="POST">
+                      {{csrf_field()}}
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Your Name">
+              @include('inc.messages')
+
+            <input type="text" name="fname" class="form-control" placeholder="Your Name" >
           </div>
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Your Email">
+            <input type="text" name="email" class="form-control" placeholder="Your Email" >
           </div>
+         
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Subject">
-          </div>
+              <input type="tel" name="mobile" class="form-control" placeholder="Mobile Number" >
+            </div>
           <div class="form-group">
-            <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+            <textarea name="message" cols="30" rows="7" class="form-control" placeholder="Message" >
+
+            </textarea>
           </div>
           <div class="form-group">
             <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+
           </div>
         </form>
                 </div>

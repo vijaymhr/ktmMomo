@@ -52,7 +52,7 @@
                 </li>
 
                 <li>
-                    <a href="/admin/feedback">
+                    <a href="/feedback">
                         <i class="material-icons">feedback</i>
                         <span>Contact Us Feedbacks</span>
                     </a>

@@ -63,12 +63,7 @@ class PagesController extends Controller
         }
 
 
-        public function foods()
-        {
-
-         
-            return view ('/admin/pages.foods');        
-        }
+        
 
 
         public function dashboard()
@@ -92,12 +87,7 @@ class PagesController extends Controller
             return view ('admin/pages.contactUsManage');        
         }
 
-        public function feedback()
-        {
-
-         
-            return view ('admin/pages.feedback');        
-        }
+       
 
         public function blogs()
         {
