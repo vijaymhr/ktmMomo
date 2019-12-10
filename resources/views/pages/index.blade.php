@@ -39,13 +39,13 @@
                                                 <div>
                                       <div class="d-flex">
                                         <div class="one-half">
-                                          <h3>Momo</h3>
+                                          <h3>{{$food->foodTitle}}</h3>
                                         </div>
                                         <div class="one-forth">
-                                          <span class="price">$14</span>
+                                          <span class="price">${{$food->price}}</span>
                                         </div>
                                       </div>
-                                      <p><span>Momo</span>, <span>Momo</span>, <span>Momo</span>, <span>Momo</span></p>
+                                      <p><span>{{$food->foodDesc}}</span></p>
                                       <p><a href="#" class="btn btn-primary">Order now</a></p>
                                   </div>
                               </div>
