@@ -68,6 +68,7 @@ class FoodsController extends Controller
     public function show($id)
     {
         $food= Food::find($id);
+
         return view ('admin/pages/showFood')->with ('food',$food);
     }
 

@@ -3,21 +3,23 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Food;
 class PagesController extends Controller
 {
     public function index()
         {
+            $foods= Food::all();
+
           
-            return view ('pages.index');
+            return view ('pages.index')->with('foods',$foods);
         }
 
 
         public function menu()
         {
-
-         
-            return view ('pages.menu');        
+            $foods= Food::all();
+         //return 123;
+            return view ('pages.menu')->with ('foods',$foods);        
         }
 
         public function about()
