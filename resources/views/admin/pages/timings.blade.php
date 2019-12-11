@@ -25,9 +25,9 @@
                                 <li class="dropdown">
     
                                        
-                                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    {{-- <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                         <i class="material-icons">more_vert</i>
-                                    </a>
+                                    </a> --}}
                                     <ul class="dropdown-menu pull-right">
     
                                             
