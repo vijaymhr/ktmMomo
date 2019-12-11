@@ -50,6 +50,12 @@
                         <a href="/foods/{{$food->id}}">{{$food -> foodTitle}}
                         </a>
                     </h3>
+                    <small>{{$food->foodDesc}}</small>
+                    <br>
+                    <small>${{$food->price}}</small>
+                    <br>
+
+
                     <small>Added on: {{$food->created_at}}</small>
                         
 

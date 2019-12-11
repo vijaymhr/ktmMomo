@@ -31,7 +31,7 @@
                                     <ul class="dropdown-menu pull-right">
     
                                             
-                                        <li><a href="timings/create">Add Timings</a></li>
+                                        <li><a href="#">Add Timings</a></li>
                                        
                                     </ul>
                                 </li>
@@ -50,6 +50,11 @@
                             <a href="/timings/{{$timing->id}}">{{$timing -> day}}
                             </a>
                         </h3>
+                        <small>Time: {{$timing->time}}</small>
+                        <br>
+
+                        <small>Modified on: {{$timing->updated_at}}</small>
+
                             
     
                             

@@ -48,7 +48,7 @@
                                                 <div class="form-line">
                                                     
                                                     {{Form::label('time', 'Time')}}
-                                                    {{Form::text('time',$timing->time,['class'=>'form-control', 'placeholder'=>'Time: 9-17'])}}
+                                                    {{Form::text('time',$timing->time,['class'=>'form-control', 'placeholder'=>'Time: 9:00 - 17:00'])}}
                         
                                                 </div>
                                             </div>
