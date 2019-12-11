@@ -10,7 +10,7 @@
     <div class="container-fluid">
         <div class="navbar-header">
             <a href="javascript:void(0);" class="bars"></a>
-            <a class="navbar-brand" href="../../index.html">Admin | Kathmandu Mo:mo House Ltd.</a>
+            <a class="navbar-brand" href="/admin/">Admin | Kathmandu Mo:mo House Ltd.</a>
         </div>
         
     </div>

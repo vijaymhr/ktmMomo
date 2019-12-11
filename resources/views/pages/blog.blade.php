@@ -33,14 +33,13 @@
                                       <div>
                             <div class="d-flex">
                               <div class="one-half">
-                                <h3>Momo</h3>
+                                <h3>Blog 1</h3>
                               </div>
                               <div class="one-forth">
-                                <span class="price">$14</span>
                               </div>
                             </div>
-                            <p><span>Momo</span>, <span>Momo</span>, <span>Momo</span>, <span>Momo</span></p>
-                            <p><a href="#" class="btn btn-primary">Order now</a></p>
+                            <p><span>Its all about nepali kitchen</span></p>
+                            <p><a href="#" class="btn btn-primary">View Blog</a></p>
                         </div>
                     </div>
                   </div>
@@ -52,19 +51,19 @@
                                     <div>
                           <div class="d-flex">
                             <div class="one-half">
-                              <h3>Momo</h3>
+                              <h3>Blog 2</h3>
                             </div>
                             <div class="one-forth">
-                              <span class="price">$14</span>
                             </div>
                           </div>
-                          <p><span>Momo</span>, <span>Momo</span>, <span>Momo</span>, <span>Momo</span></p>
-                          <p><a href="#" class="btn btn-primary">Order now</a></p>
+                          <p><span>This is blog 2</span></p>
+                          <p><a href="#" class="btn btn-primary">View Blog</a></p>
                       </div>
                   </div>
                 </div>
                 </div>
 
+                 
                   <div class="col-md-12 col-lg-6 d-flex align-self-stretch">
                       <div class="menus d-sm-flex ftco-animate align-items-stretch">
                     <div class="menu-img img order-md-last" style="background-image: url(https://img.taste.com.au/mdKxKxoR/taste/2016/11/chicken-momos-with-tomato-achar-46671-1.jpeg);"></div>
@@ -72,38 +71,17 @@
                                       <div>
                             <div class="d-flex">
                               <div class="one-half">
-                                <h3>Momo</h3>
+                                <h3>Blog 3</h3>
                               </div>
                               <div class="one-forth">
-                                <span class="price">$14</span>
                               </div>
                             </div>
-                            <p><span>Momo</span>, <span>Momo</span>, <span>Momo</span>, <span>Momo</span></p>
-                            <p><a href="#" class="btn btn-primary">Order now</a></p>
+                            <p><span>It all about new test and all</span></p>
+                            <p><a href="#" class="btn btn-primary">View Blog</a></p>
                         </div>
                     </div>
                   </div>
                   </div>
-                  <div class="col-md-12 col-lg-6 d-flex align-self-stretch">
-                      <div class="menus d-sm-flex ftco-animate align-items-stretch">
-                    <div class="menu-img img order-md-last" style="background-image: url(https://img.taste.com.au/mdKxKxoR/taste/2016/11/chicken-momos-with-tomato-achar-46671-1.jpeg);"></div>
-                    <div class="text d-flex align-items-center">
-                                      <div>
-                            <div class="d-flex">
-                              <div class="one-half">
-                                <h3>Momo</h3>
-                              </div>
-                              <div class="one-forth">
-                                <span class="price">$14</span>
-                              </div>
-                            </div>
-                            <p><span>Momo</span>, <span>Momo</span>, <span>Momo</span>, <span>Momo</span></p>
-                            <p><a href="#" class="btn btn-primary">Order now</a></p>
-                        </div>
-                    </div>
-                  </div>
-                  </div>
-                  <p><a href="menu" class="btn btn-dark " style="margin-top:20px;" > Discover More</a></p>
               </div>
     </div>
                   </div>

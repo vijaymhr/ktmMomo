@@ -44,7 +44,7 @@
                                       <tr>
                                         <td>{{$food->foodTitle}}</td>
                                         <td>{{$food->foodDesc}}</td>
-                                         <td>{{$food->price}}</td>
+                                         <td>NZ$ {{$food->price}}</td>
                                          
                                       </tr>
                                      

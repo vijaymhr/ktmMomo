@@ -47,7 +47,7 @@
                         
                                                 <div class="form-line">
                                                     
-                                                    {{Form::label('price', 'Price')}}
+                                                    {{Form::label('price', 'Price NZ$')}}
                                                     {{Form::text('price','',['class'=>'form-control', 'placeholder'=>'Price - Eg.10.0'])}}
                         
                                                 </div>

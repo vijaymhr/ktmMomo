@@ -52,7 +52,7 @@
                     </h3>
                     <small>{{$food->foodDesc}}</small>
                     <br>
-                    <small>${{$food->price}}</small>
+                    <small>NZ$ {{$food->price}}</small>
                     <br>
 
 
