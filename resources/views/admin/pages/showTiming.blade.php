@@ -53,7 +53,7 @@
 <br>
                         
                      
-                <small>Written on: {{$timing->created_at}}</small>
+                <small>Updated on: {{$timing->updated_at}}</small>
             </div>
 
                 <hr>
@@ -63,7 +63,7 @@
                     <i class="material-icons">mode_edit</i>
                     <span>Edit Time</span>
                 </a>
-
+{{-- 
                 {!!Form::open(['action'=>['TimingController@destroy', $timing->id],'method'=>'POST', 'class'=>'pull-right'])!!}
 
                     {{Form::hidden('_method', 'DELETE')}}
@@ -73,14 +73,7 @@
 
                     <script>
                                   
-                                //    function validateForm() {
-                                //     event.preventDefault(); // prevent form submit
-                                //     var form = event.target.form; // storing the form
-                                //     if (confirm("Are you sure want to delete this item?")) {
-                                //         form.submit();          // submitting the form when user press yes
-                                //     } else {
-                                //         swal("Cancelled", "Your data is safe", "error");
-                                //     }
+                    
                                     
 
                                  function validateForm() {
@@ -96,7 +89,7 @@
 
    
 
-                           </script>
+                           </script> --}}
 
                 </div>
                 

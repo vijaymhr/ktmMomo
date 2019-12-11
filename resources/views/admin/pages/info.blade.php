@@ -63,10 +63,10 @@
             <hr>
             <div class="header">
 
-            {{-- <a href="/foods/{{$food->id}}/edit" class="btn btn-success waves-effect"> 
+            <a href="/info/{{$info->id}}/edit" class="btn btn-success waves-effect"> 
                 <i class="material-icons">mode_edit</i>
-                <span>Edit Food Item</span>
-            </a> --}}
+                <span>Edit Address Info</span>
+            </a>
 
            
                

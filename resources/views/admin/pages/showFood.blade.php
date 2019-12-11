@@ -55,7 +55,7 @@
 <br>
                         
                      
-                <small>Written on: {{$food->created_at}}</small>
+                <small>Updated on: {{$food->updated_at}}</small>
             </div>
 
                 <hr>

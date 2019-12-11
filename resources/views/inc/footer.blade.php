@@ -13,9 +13,9 @@
                  <p><span class="fa fa-map-marker"></span>
                   <span class="text">Shop | {{$info->shopAddress}}</span></p>
                 <p><span class="fa fa-phone"></span>
-                  <span class="text"> {{$info->phone}}</span></p>
+                  <span class="text">  <a href="tel://{{$info->phone}}">{{$info->phone}}</a></span></p>
                 <p><span class="fa fa-envelope"></span>
-                  <span class="text">{{{$info->email}}}</span></p>
+                  <span class="text"><a href="mailto:{{$info->email}}">{{$info->email}}</a></span></p>
 
                   @endforeach
 
@@ -40,8 +40,12 @@
               <div class="ftco-footer-widget mb-4">
                 <h2 class="ftco-heading-2">Our Opening Hours</h2>
                 <ul class="list-unstyled open-hours">
-                  <li class="d-flex"><span>Monday - Sunday</span><span>9:00 - 17:00</span></li>
-                  <li class="d-flex"><span>Friday</span><span>9:00 - 21:00</span></li>
+                  @foreach ($timings as $timing)
+                      
+                  <li class="d-flex"><span>{{$timing->day}}</span><span>{{$timing->time}}</span></li>
+                 
+                  @endforeach
+
                   
                 </ul>
               </div>

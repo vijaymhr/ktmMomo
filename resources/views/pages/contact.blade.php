@@ -25,25 +25,31 @@
                         <div class="col-md-12 mb-4">
                           <h2 class="h4 font-weight-bold">Contact Information</h2>
                         </div>
-                        <div class="w-100"></div>
+                        @foreach ($infos as $info)
+                            
                         <div class="col-md-3 d-flex">
                             <div class="dbox">
-                              <p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
+                              <p><span><strong>Address</strong></span> <br>
+                                {{$info->shopAddress}}</p>
+
                           </div>
                         </div>
                         <div class="col-md-3 d-flex">
                             <div class="dbox">
-                              <p><span>Phone:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
+                              <p><span><strong>Phone</strong></span> <br>
+                                <a href="tel://{{$info->phone}}">{{$info->phone}}</a></p>
                           </div>
                         </div>
                         <div class="col-md-3 d-flex">
                             <div class="dbox">
-                              <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+                              <p><span><strong>Email</strong></span> <a href="mailto:{{$info->email}}">{{$info->email}}</a></p>
                           </div>
                         </div>
+                        @endforeach
+
                         <div class="col-md-3 d-flex">
                             <div class="dbox">
-                              <p><span>Website</span> <a href="#">yoursite.com</a></p>
+                              <p><span><strong>Website</strong></span> <a href="/">www.ktmmomohouse.com</a></p>
                           </div>
                         </div>
                       </div>

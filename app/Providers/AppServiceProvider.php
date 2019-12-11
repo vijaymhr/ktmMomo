@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Schema;
 use View;
 use App\Info;
 use App\Feedback;
+use\App\Timing;
 
 
 class AppServiceProvider extends ServiceProvider
@@ -43,6 +44,12 @@ class AppServiceProvider extends ServiceProvider
         {
             $feedbacks= Feedback::all();
                 $view->with('feedbacks',$feedbacks);
+        });
+
+        View()->composer('*',function($view)
+        {
+            $timings= Timing::all();
+                $view->with('timings',$timings);
         });
         
     }

@@ -48,7 +48,9 @@ class InfoController extends Controller
      */
     public function show($id)
     {
-        //
+        $infos= Info::all($id);
+
+        return view ('admin/pages.info')->with('infos', $infos);
     }
 
     /**
@@ -59,7 +61,8 @@ class InfoController extends Controller
      */
     public function edit($id)
     {
-        //
+        $info= Info::find($id);
+        return view ('admin/pages/editInfo')->with ('info',$info);
     }
 
     /**
@@ -71,7 +74,26 @@ class InfoController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $this->validate($request,
+        [
+            'adminAddress'=>'required',
+            'shopAddress'=>'required',
+            'phone'=>'required',
+            'email'=>'required',
+
+        ]);
+
+        //update food items
+        $info=Info::find($id);
+        $info->adminAddress=$request->input('adminAddress');
+        $info->shopAddress=$request->input('shopAddress');
+        $info->phone=$request->input('phone');
+        $info->email=$request->input('email');
+
+     
+        $info->save();
+
+        return redirect('/info')->with('success', 'Address Info has been Updated Successfully');
     }
 
     /**
