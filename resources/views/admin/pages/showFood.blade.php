@@ -69,35 +69,35 @@
                 {!!Form::open(['action'=>['FoodsController@destroy', $food->id],'method'=>'POST', 'class'=>'pull-right'])!!}
 
                     {{Form::hidden('_method', 'DELETE')}}
-                    {{Form::button('<i class="material-icons">delete_forever</i> <span>Delete This Item</span>', ['type'=>'submit','class'=>'btn btn-warning waves-effect', 'onclick'=>'return validateForm()'])}}
+                    {{Form::button('<i class="material-icons">delete_forever</i> <span>Delete This Item</span>', ['type'=>'submit','class'=>'btn btn-warning waves-effect', 'onclick'=>'return validateForm(this)'])}}
 
                     {!! Form::close() !!}
 
                     <script>
                                   
-                                   function validateForm() {
-                                    event.preventDefault(); // prevent form submit
-                                    var form = event.target.form; // storing the form
-                                            swal({
-                                                    title: "Are you sure?",
-                                                    text: "You cannot recover the data once you deleted !",
-                                                    type: "warning",
-                                                    showCancelButton: true,
-                                                    confirmButtonColor: "#DD6B55",
-                                                    confirmButtonText: "Yes, Delete the Item!",
-                                                    cancelButtonText: "No, cancel please!",
-                                                    closeOnConfirm: false,
-                                                    closeOnCancel: true
-                                                 },
+                                //    function validateForm() {
+                                //     event.preventDefault(); // prevent form submit
+                                //     var form = event.target.form; // storing the form
+                                //     if (confirm("Are you sure want to delete this item?")) {
+                                //         form.submit();          // submitting the form when user press yes
+                                //     } else {
+                                //         swal("Cancelled", "Your data is safe", "error");
+                                //     }
+                                    
+
+                                 function validateForm() {
                                    
-                                    function(isConfirm){
-                                    if (isConfirm) {
-                                        form.submit();          // submitting the form when user press yes
+                                    if ( confirm("Are you sure you wish to delete?") == false ) {
+                                        return false ;
                                     } else {
-                                        swal("Cancelled", "Your data is safe", "error");
-                                    }
-                                    });
-                                    }
+                                        return true ;
+                                    }                                }
+
+
+
+
+   
+
                            </script>
 
                 </div>

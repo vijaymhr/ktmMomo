@@ -73,7 +73,12 @@
                 </li>
                 
 
-
+                <li>
+                        <a href="/timings">
+                            <i class="material-icons">access_time</i>
+                            <span>Opening Hours</span>
+                        </a>
+                    </li>
                
                 
                 

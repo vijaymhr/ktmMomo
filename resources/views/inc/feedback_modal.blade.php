@@ -17,6 +17,7 @@
               @include('inc.messages')
 
               <form action="{{action('FeedbackController@store')}}" method="POST">
+                {{-- remove url from here, onsubmit""contact" --}}
                   {{csrf_field()}}
       <div class="form-group">
           @include('inc.messages')

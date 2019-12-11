@@ -50,6 +50,8 @@ Route::resource('foods', 'FoodsController');
 Route::resource('contact', 'FeedbackController');
 Route::resource('feedback', 'FeedbackAdminController');
 Route::resource('info', 'InfoController');
+Route::resource('timings', 'TimingController');
+
 
 
 

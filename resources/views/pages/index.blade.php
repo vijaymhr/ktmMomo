@@ -60,7 +60,7 @@
                           </div>
                 </div>
               </div>
-              <p><a href="menu" class="btn btn-dark " style="margin-top:20px;" > Discover More</a></p>
+              <p><a href="menu" class="btn btn-primary" style="margin-top:20px;" > Discover More</a></p>
 
             </div>
 
