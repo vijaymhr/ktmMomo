@@ -61,7 +61,7 @@
 
                 <a href="/timings/{{$timing->id}}/edit" class="btn btn-success waves-effect"> 
                     <i class="material-icons">mode_edit</i>
-                    <span>Edit Time</span>
+                    <span>Edit Day/ Time</span>
                 </a>
 {{-- 
                 {!!Form::open(['action'=>['TimingController@destroy', $timing->id],'method'=>'POST', 'class'=>'pull-right'])!!}
