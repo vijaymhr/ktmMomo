@@ -4,79 +4,70 @@
 
 <section class="content">
         <div class="container-fluid">
- <!-- Headings -->
- <div class="row clearfix">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <div class="card">
-                <div class="header">
-                    <h2>
-                        Our Opening Hours
-                    </h2>
-
-
-                                            <ul class="header-dropdown m-r--5">
-                                                    <li>
-                                                    <a href="#"><i class="material-icons">arrow_back</i></a>
-                                                        </li>
-                                               
-                                            </ul>
-                                       
-                  
-                </div>
-
-              
-                        
-                <div class="body">
-
-                        <table class="table">
-                                <thead>
-                                  <tr>
-                                    <th scope="col">Day</th>
-                                    <th scope="col">Time</th>
-                                    
-
-
-                                  </tr>
-                                </thead>
-                                <tbody>
-
-                                    {{-- @foreach ($infos as $info) --}}
-                                        
-                                  <tr>
-                                  <td>1</td>
-                                    <td>2</td>
-                                   
-                                  </tr>
-                                  {{-- @endforeach --}}
-
-                                </tbody>
-                              </table>
-
-
-<br>
-                    
-                 
-        </div>
-
-            <hr>
-            <div class="header">
-
-            {{-- <a href="/foods/{{$food->id}}/edit" class="btn btn-success waves-effect"> 
-                <i class="material-icons">mode_edit</i>
-                <span>Edit Food Item</span>
-            </a> --}}
-
-           
-               
-            </div>
             
             
-            </div>
-        </div>
-    </div>
-    <!-- #END# Headings -->
+            <!-- Headings -->
+            <div class="row clearfix">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card">
+                        <div class="header">
     
-</div>
-</section>
+                               
+    
+    
+                            <h2>
+                                Opening Hours Detais
+                            </h2>
+                            <ul class="header-dropdown m-r--5">
+                                   
+    
+    
+                                <li class="dropdown">
+    
+                                       
+                                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <i class="material-icons">more_vert</i>
+                                    </a>
+                                    <ul class="dropdown-menu pull-right">
+    
+                                            
+                                        <li><a href="timings/create">Add Timings</a></li>
+                                       
+                                    </ul>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        @include('inc.messages')
+    
+                        @if(count($timings) > 0 )
+                            @foreach ($timings as $timing)
+    
+    
+                        <div class="body">
+    
+                        <h3>
+                            <a href="/timings/{{$timing->id}}">{{$timing -> day}}
+                            </a>
+                        </h3>
+                            
+    
+                            
+                        </div>
+                            @endforeach
+    
+                        @else
+    
+                            <p> No Data Available. Please Add.</p>
+                        @endif
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- #END# Headings -->
+            
+        </div>
+    </section>
+    
 
 @endsection

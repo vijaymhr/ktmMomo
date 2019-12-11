@@ -26,7 +26,7 @@ class TimingController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin/pages.addTiming');
     }
 
     /**
@@ -37,7 +37,20 @@ class TimingController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request,
+        [
+            'day'=>'required',
+            'time'=>'required',
+        ]);
+
+        //create add food items
+        $timing=new Timing;
+        $timing->day=$request->input('day');
+        $timing->time=$request->input('time');
+        $timing->save();
+
+        return redirect('/timings')->with('success', 'New Time added');
+
     }
 
     /**
@@ -48,7 +61,9 @@ class TimingController extends Controller
      */
     public function show($id)
     {
-        //
+        $timing= Timing::find($id);
+
+        return view ('admin/pages/showTiming')->with ('timing',$timing);
     }
 
     /**
@@ -59,7 +74,8 @@ class TimingController extends Controller
      */
     public function edit($id)
     {
-        //
+        $timing= Timing::find($id);
+        return view ('admin/pages/editTiming')->with ('timing',$timing);
     }
 
     /**
@@ -71,7 +87,20 @@ class TimingController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $this->validate($request,
+        [
+            'day'=>'required',
+            'time'=>'required',
+        ]);
+
+        //update food items
+        $timing=Timing::find($id);
+        $timing->day=$request->input('day');
+        $timing->time=$request->input('time');
+     
+        $timing->save();
+
+        return redirect('/timings')->with('success', 'Time has been Updated Successfully');
     }
 
     /**
@@ -82,6 +111,11 @@ class TimingController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $timing=Timing::find($id);
+      $timing->delete();
+
+
+
+      return redirect('/timings')->with('success', 'Time Removed Successfully');
     }
 }

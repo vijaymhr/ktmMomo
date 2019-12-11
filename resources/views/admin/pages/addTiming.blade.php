@@ -12,11 +12,11 @@
                 <div class="card">
                     <div class="header">
                         <h2>
-                            Edit Food Items
+                            Add Timings 
                         </h2>
                         <ul class="header-dropdown m-r--5">
                                 <li>
-                                <a href="/foods/{{$food->id}}"><i class="material-icons">arrow_back</i></a>
+                                        <a href="/timings"><i class="material-icons">arrow_back</i></a>
                                     </li>
                            
                         </ul>
@@ -27,15 +27,15 @@
                             
                     <div class="body">
 
-                            {!! Form::open(['action' => ['FoodsController@update', $food->id], 'method'=> 'POST']) !!}
+                            {!! Form::open(['action' => 'TimingController@store', 'method'=> 'POST']) !!}
                             <div class="row clearfix">
                                     <div class="col-sm-4">
                     <div class="form-group">
 
                         <div class="form-line">
                             
-                            {{Form::label('foodTitle', 'Food Name')}}
-                            {{Form::text('foodTitle',$food->foodTitle,['class'=>'form-control', 'placeholder'=>'Food Name'])}}
+                            {{Form::label('day', 'Day')}}
+                            {{Form::text('day','',['class'=>'form-control', 'placeholder'=>'Day: e.g. Sunday'])}}
 
                         </div>
                     </div>
@@ -47,29 +47,18 @@
                         
                                                 <div class="form-line">
                                                     
-                                                    {{Form::label('price', 'Price')}}
-                                                    {{Form::text('price',$food->price,['class'=>'form-control', 'placeholder'=>'Price - Eg.10.0'])}}
+                                                    {{Form::label('time', 'Time')}}
+                                                    {{Form::text('time','',['class'=>'form-control', 'placeholder'=>'Time: e.g. 9-17'])}}
                         
                                                 </div>
                                             </div>
                                                             </div>
 
-                            </div><!--clearfix close div for col-sm-4-->
+                            </div>
 
-                            <div class="form-group">
-                        
-                                    <div class="form-line">
-                                        
-                                        {{Form::label('foodDesc', 'Food Description')}}
-                                        {{Form::textarea('foodDesc',$food->foodDesc,['class'=>'form-control', 'placeholder'=>'Food Description'])}}
-            
-                                    </div>
-                                </div>
+                                {{Form::button('<i class="material-icons">add</i> <span>Add Time</span>', ['type'=>'submit','class'=>'btn btn-success waves-effect'])}}
 
-                                {{Form::hidden('_method', 'PUT')}}
-                                {{Form::button('<i class="material-icons">save</i> <span>Update Food</span>', ['type'=>'submit','class'=>'btn btn-success waves-effect'])}}
-
-                        {!! Form::close() !!}
+                                 {!! Form::close() !!}
 
 
 
