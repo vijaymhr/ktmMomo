@@ -18,6 +18,7 @@
 	        	<li class="nav-item"><a href="about" class="nav-link">About Us</a></li>
 	        	<li class="nav-item"><a href="contact" class="nav-link">Contact</a></li>
 			  <li class="nav-item"><a href="blog" class="nav-link">Blog</a></li>
+
 			  <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#feedback">
 				Any Questions?
 			  </button>
