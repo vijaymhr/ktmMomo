@@ -46,6 +46,13 @@
 
                     <div class="body">
 
+                        <div class="row">
+                            <div class="col-md-4 col sm-4">
+                                <img style ="width: 100%" src="/storage/cover_images/{{$food->cover_image}}">
+
+                            </div>
+                            <div class="col-md-8 col sm-8">
+
                     <h3>
                         <a href="/foods/{{$food->id}}">{{$food -> foodTitle}}
                         </a>
@@ -59,7 +66,8 @@
                     <small>Added on: {{$food->created_at}}</small>
                         
 
-                        
+                            </div>
+                    </div>
                     </div>
                         @endforeach
 

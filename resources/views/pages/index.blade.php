@@ -34,7 +34,11 @@
 
                               <div class="col-md-12 col-lg-6 d-flex align-self-stretch">
                                 <div class="menus d-sm-flex ftco-animate align-items-stretch">
-                              <div class="menu-img img" style="background-image: url(https://cdn.pastemagazine.com/www/articles/Momos%20-%20Photo%20Credit%20-%20Sabrina%20Toppa.jpg);"></div>
+                              <div class="menu-img img">
+                              
+                              <img style ="width: 100%" height="232px" src="/storage/cover_images/{{$food->cover_image}}">
+
+                              </div>
                               <div class="text d-flex align-items-center">
                                                 <div>
                                       <div class="d-flex">

@@ -27,7 +27,7 @@
                             
                     <div class="body">
 
-                            {!! Form::open(['action' => ['FoodsController@update', $food->id], 'method'=> 'POST']) !!}
+                            {!! Form::open(['action' => ['FoodsController@update', $food->id], 'method'=> 'POST', 'enctype'=>'multipart/form-data']) !!}
                             <div class="row clearfix">
                                     <div class="col-sm-4">
                     <div class="form-group">
@@ -54,6 +54,10 @@
                                             </div>
                                                             </div>
 
+
+
+                                                            
+
                             </div><!--clearfix close div for col-sm-4-->
 
                             <div class="form-group">
@@ -65,6 +69,15 @@
             
                                     </div>
                                 </div>
+
+
+                                <div class="form-group">
+
+                                    {{Form::label('cover_image', 'Cover Image')}}
+
+                                    {{Form::file(('cover_image'))}}
+                                </div>
+
 
                                 {{Form::hidden('_method', 'PUT')}}
                                 {{Form::button('<i class="material-icons">save</i> <span>Update Food</span>', ['type'=>'submit','class'=>'btn btn-success waves-effect'])}}

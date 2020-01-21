@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Food;
+use Illuminate\Support\Facades\Storage;
 
 class FoodsController extends Controller
 {
@@ -43,14 +44,39 @@ class FoodsController extends Controller
         [
             'foodTitle'=>'required',
             'foodDesc'=>'required',
-            'price' => 'required | numeric'
+            'price' => 'required | numeric',
+            'cover_image'=>'image | nullable | max:1999'
         ]);
+        //handle image upload
+
+            if($request->hasfile('cover_image')){
+                //get filename with the extension
+                $filenameWithExt = $request->file('cover_image')->getClientOriginalName();      
+                //get just filename
+                
+                $filename=pathinfo($filenameWithExt, PATHINFO_FILENAME);
+
+                //get just extension
+                
+                $extension=$request->file('cover_image')->getClientOriginalExtension();
+                //filename to Store
+                
+                $fileNameToStore=$filename.'_'.time().'.'.$extension;
+                
+                //upload Image
+
+                $path=$request->file('cover_image')->storeAs('public/cover_images',$fileNameToStore);
+            }
+            else{
+                $fileNameToStore="noimage.jpg";
+            }
 
         //create add food items
         $food=new Food;
         $food->foodTitle=$request->input('foodTitle');
         $food->foodDesc=$request->input('foodDesc');
         $food->price=$request->input('price');
+        $food->cover_image=$fileNameToStore;
         $food->save();
 
         return redirect('/foods')->with('success', 'New Food Item Added');
@@ -100,11 +126,39 @@ class FoodsController extends Controller
             'price' => 'required | numeric' 
         ]);
 
+
+        if($request->hasfile('cover_image')){
+            //get filename with the extension
+            $filenameWithExt = $request->file('cover_image')->getClientOriginalName();      
+            //get just filename
+            
+            $filename=pathinfo($filenameWithExt, PATHINFO_FILENAME);
+
+            //get just extension
+            
+            $extension=$request->file('cover_image')->getClientOriginalExtension();
+            //filename to Store
+            
+            $fileNameToStore=$filename.'_'.time().'.'.$extension;
+            
+            //upload Image
+
+            $path=$request->file('cover_image')->storeAs('public/cover_images',$fileNameToStore);
+        }
+      
+
+
+
         //update food items
         $food=Food::find($id);
         $food->foodTitle=$request->input('foodTitle');
         $food->foodDesc=$request->input('foodDesc');
         $food->price=$request->input('price');
+        if($request->hasfile('cover_image')){
+
+            $food->cover_image = $fileNameToStore;
+        }
+
         $food->save();
 
         return redirect('/foods')->with('success', 'Food Item Updated Successfully');
@@ -119,6 +173,13 @@ class FoodsController extends Controller
     public function destroy($id)
     {
       $food=Food::find($id);
+
+
+      if($food->cover_image != 'noimage.jpg')
+      {
+        //delete images also
+        storage::delete('public/cover_images/'.$food->cover_image);
+      }
       $food->delete();
 
 

@@ -75,8 +75,13 @@
                         @foreach ($foods as $food)
                       <div class="col-md-12 col-lg-6 d-flex align-self-stretch">
                                   <div class="menus d-sm-flex ftco-animate align-items-stretch">
-                                <div class="menu-img img" style="background-image: url(https://img.taste.com.au/mdKxKxoR/taste/2016/11/chicken-momos-with-tomato-achar-46671-1.jpeg);"></div>
-                                <div class="text d-flex align-items-center">
+                                    <div class="menu-img img">
+                              
+                                      <img style ="width: 100%" height ="232px" src="/storage/cover_images/{{$food->cover_image}}">
+        
+                                      </div>
+                                                                    
+                                      <div class="text d-flex align-items-center">
                                                   <div>
                                         <div class="d-flex">
                                           <div class="one-half">

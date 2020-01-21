@@ -55,9 +55,18 @@
 <br>
                         
                      
-                <small>Updated on: {{$food->updated_at}}</small>
-            </div>
+                <div class="col-md-3 col sm-3">
+                    <img style ="width: 50%" src="/storage/cover_images/{{$food->cover_image}}">
 
+                </div>
+
+                <br>
+
+            </div>
+            <div class="col-md-3 col sm-3">
+
+            <small >Updated on: {{$food->updated_at}}</small>
+            </div>
                 <hr>
                 <div class="header">
 
