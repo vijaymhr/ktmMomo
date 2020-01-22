@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Food;
 use App\Info;
+use App\Gallery;
+
 class PagesController extends Controller
 {
     public function index()
@@ -36,8 +38,9 @@ class PagesController extends Controller
         {
 
            
-            return view ('pages.gallery');        
-        }
+            $gallerys= Gallery::all();
+            //return 123;
+               return view ('pages.gallery')->with ('gallerys',$gallerys);         }
     
         public function contact()
         {

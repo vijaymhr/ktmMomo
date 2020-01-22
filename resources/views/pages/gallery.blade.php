@@ -25,71 +25,21 @@
 <div class="container">
 <div class="row">
 <div class="row">
+    @foreach ($gallerys as $gallery)
+
         <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-            <a class="thumbnail foodimg" href="#" data-image-id="" data-toggle="modal" data-title="Breakfast"
-               data-image="{{ asset('images/breakfast-3.jpg') }}"
+        <a class="thumbnail foodimg" href="#" data-image-id="" data-toggle="modal" data-title="{{$gallery->imageTitle}}"
+        data-image="/storage/photoGallery/{{$gallery->photo}}"
                data-target="#image-gallery">
                 <img class="img-thumbnail"
-                     src="{{ asset('images/breakfast-3.jpg') }}"
+                src="/storage/photoGallery/{{$gallery->photo}}"
                      alt="Another alt text">
             </a>
         </div>
-        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Breakfast"
-               data-image="{{ asset('images/breakfast-4.jpg') }}"
-               data-target="#image-gallery">
-                <img class="img-thumbnail"
-                     src="{{ asset('images/breakfast-4.jpg') }}"
-                     alt="Another alt text">
-            </a>
-        </div>
+       
 
-        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Drinks"
-               data-image="{{ asset('images/drink-3.jpg') }}"
-               data-target="#image-gallery">
-                <img class="img-thumbnail"
-                     src="{{ asset('images/drink-3.jpg') }}"
-                     alt="Another alt text">
-            </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Lunch"
-               data-image="{{ asset('images/lunch-3.jpg') }}"
-               data-target="#image-gallery">
-                <img class="img-thumbnail"
-                     src="{{ asset('images/lunch-3.jpg') }}"
-                     alt="Another alt text">
-            </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Lunch"
-               data-image="{{ asset('images/lunch-6.jpg') }}"
-               data-target="#image-gallery">
-                <img class="img-thumbnail"
-                     src="{{ asset('images/lunch-6.jpg') }}"
-                     alt="Another alt text">
-            </a>
-        </div>
+        @endforeach
 
-
-
-        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Laminate"
-               data-image="{{ asset('images/drink-5.jpg') }}"
-               data-target="#image-gallery">
-                <img class="img-thumbnail"
-                     src="{{ asset('images/drink-5.jpg') }}"
-                     alt="Another alt text">
-            </a>
-        </div>
-     
-
-
-
-     
-  
-  
     </div>
 
 
