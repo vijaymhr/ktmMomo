@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Food;
 use App\Info;
 use App\Gallery;
+use App\About;
 
 class PagesController extends Controller
 {
@@ -30,8 +31,10 @@ class PagesController extends Controller
         public function about()
         {
           
-            return view ('pages.about');
-        }
+            $abouts= About::all();
+            //return 123;
+               return view ('pages.aboutUs')->with ('abouts',$abouts);         }
+           
 
 
         public function gallery()
@@ -108,7 +111,12 @@ class PagesController extends Controller
          
             return view ('admin/pages.foodGallery');        
         }
+        public function aboutus()
+        {
 
+         
+            return view ('admin/pages.about');        
+        }
         
 
     //admin Controller pages ends here

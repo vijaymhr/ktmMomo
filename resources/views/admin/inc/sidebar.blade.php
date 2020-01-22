@@ -80,7 +80,12 @@
                         </a>
                     </li>
                
-                
+                    <li>
+                        <a href="/about">
+                            <i class="material-icons">business</i>
+                            <span>About Us</span>
+                        </a>
+                    </li>
                 
               
                 

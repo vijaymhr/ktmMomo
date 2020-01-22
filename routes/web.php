@@ -20,7 +20,7 @@ Route::get('/', 'PagesController@index');
 Route::get('/gallery', 'PagesController@gallery');
 
 Route::get('/menu', 'PagesController@menu');
-Route::get('/about', 'PagesController@about');
+Route::get('/aboutUs', 'PagesController@about');
 Route::get('/contact', 'PagesController@contact');
 Route::get('/blog', 'PagesController@blog');
 
@@ -52,6 +52,8 @@ Route::resource('feedback', 'FeedbackAdminController');
 Route::resource('info', 'InfoController');
 Route::resource('timings', 'TimingController');
 Route::resource('foodGallery', 'GalleryController');
+Route::resource('about', 'AboutController');
+
 
 
 
