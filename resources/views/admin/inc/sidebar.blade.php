@@ -66,7 +66,7 @@
                 </li>
 
                 <li>
-                    <a href="/admin/foodGallery">
+                    <a href="/foodGallery">
                         <i class="material-icons">photo_library</i>
                         <span>Image Gallery</span>
                     </a>

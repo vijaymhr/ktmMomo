@@ -38,7 +38,7 @@ Route::get('/admin/contactUsManage', 'PagesController@contactUsManage');
 
 Route::get('/admin/blogs', 'PagesController@blogs');
 
-Route::get('/admin/foodGallery', 'PagesController@foodGallery');
+//Route::get('/admin/foodGallery', 'PagesController@foodGallery');
 
 
 Auth::routes();
@@ -51,6 +51,7 @@ Route::resource('contact', 'FeedbackController');
 Route::resource('feedback', 'FeedbackAdminController');
 Route::resource('info', 'InfoController');
 Route::resource('timings', 'TimingController');
+Route::resource('foodGallery', 'GalleryController');
 
 
 
