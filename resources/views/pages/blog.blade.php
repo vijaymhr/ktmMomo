@@ -26,62 +26,34 @@
   <div class="tab-content" id="v-pills-tabContent">
     <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="day-1-tab">
         <div class="row no-gutters d-flex align-items-stretch">
+
+          @foreach ($blogs as $blog)
+
                   <div class="col-md-12 col-lg-6 d-flex align-self-stretch">
                       <div class="menus d-sm-flex ftco-animate align-items-stretch">
-                    <div class="menu-img img" style="background-image: url(https://img.taste.com.au/mdKxKxoR/taste/2016/11/chicken-momos-with-tomato-achar-46671-1.jpeg);"></div>
+                    <div class="menu-img img" style="background-image: url(/storage/blogImages/{{$blog->blogImage}});"></div>
                     <div class="text d-flex align-items-center">
                                       <div>
                             <div class="d-flex">
                               <div class="one-half">
-                                <h3>Blog 1</h3>
+                              <h3>{{$blog->blogTitle}}</h3>
                               </div>
                               <div class="one-forth">
                               </div>
                             </div>
-                            <p><span>Its all about nepali kitchen</span></p>
+                          <p><span>{{$blog->blogDesc}}</span></p>
                             <p><a href="#" class="btn btn-primary">View Blog</a></p>
                         </div>
                     </div>
                   </div>
                   </div>
-                  <div class="col-md-12 col-lg-6 d-flex align-self-stretch">
-                    <div class="menus d-sm-flex ftco-animate align-items-stretch">
-                  <div class="menu-img img" style="background-image: url(https://img.taste.com.au/mdKxKxoR/taste/2016/11/chicken-momos-with-tomato-achar-46671-1.jpeg);"></div>
-                  <div class="text d-flex align-items-center">
-                                    <div>
-                          <div class="d-flex">
-                            <div class="one-half">
-                              <h3>Blog 2</h3>
-                            </div>
-                            <div class="one-forth">
-                            </div>
-                          </div>
-                          <p><span>This is blog 2</span></p>
-                          <p><a href="#" class="btn btn-primary">View Blog</a></p>
-                      </div>
-                  </div>
-                </div>
-                </div>
+
+                  @endforeach
 
                  
-                  <div class="col-md-12 col-lg-6 d-flex align-self-stretch">
-                      <div class="menus d-sm-flex ftco-animate align-items-stretch">
-                    <div class="menu-img img order-md-last" style="background-image: url(https://img.taste.com.au/mdKxKxoR/taste/2016/11/chicken-momos-with-tomato-achar-46671-1.jpeg);"></div>
-                    <div class="text d-flex align-items-center">
-                                      <div>
-                            <div class="d-flex">
-                              <div class="one-half">
-                                <h3>Blog 3</h3>
-                              </div>
-                              <div class="one-forth">
-                              </div>
-                            </div>
-                            <p><span>It all about new test and all</span></p>
-                            <p><a href="#" class="btn btn-primary">View Blog</a></p>
-                        </div>
-                    </div>
-                  </div>
-                  </div>
+
+                 
+                  
               </div>
     </div>
                   </div>

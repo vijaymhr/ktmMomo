@@ -53,6 +53,8 @@ Route::resource('info', 'InfoController');
 Route::resource('timings', 'TimingController');
 Route::resource('foodGallery', 'GalleryController');
 Route::resource('about', 'AboutController');
+Route::resource('blogPost', 'BlogController');
+
 
 
 

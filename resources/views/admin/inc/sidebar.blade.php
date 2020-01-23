@@ -59,7 +59,7 @@
                 </li>
 
                 <li>
-                    <a href="/admin/blogs">
+                    <a href="/blogPost">
                         <i class="material-icons">vpn_lock</i>
                         <span>Blog</span>
                     </a>

@@ -7,6 +7,7 @@ use App\Food;
 use App\Info;
 use App\Gallery;
 use App\About;
+use App\Blog;
 
 class PagesController extends Controller
 {
@@ -56,8 +57,10 @@ class PagesController extends Controller
         public function blog()
         {
 
-       
-            return view ('pages.blog');        
+            $blogs= Blog::all();
+            //return 123;
+               return view ('pages.blog')->with ('blogs',$blogs);     
+          
         }
 
 
@@ -98,11 +101,11 @@ class PagesController extends Controller
 
        
 
-        public function blogs()
+        public function blogPost()
         {
 
          
-            return view ('admin/pages.blogs');        
+            return view ('admin/pages.blogPost');        
         }
 
         public function foodGallery()
