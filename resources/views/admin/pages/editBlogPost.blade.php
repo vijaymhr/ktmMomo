@@ -55,10 +55,21 @@
                                     <div class="form-line">
                                         
                                         {{Form::label('blogDesc', 'Blog Description')}}
-                                        {{Form::textarea('blogDesc',$blog->blogDesc,['class'=>'form-control', 'placeholder'=>'blog Description'])}}
+                                        {{Form::text('blogDesc',$blog->blogDesc,['class'=>'form-control', 'placeholder'=>'blog Description'])}}
             
                                     </div>
                                 </div>
+
+                                
+                                <div class="form-group">
+                        
+                                    <div class="form-line">
+                                        
+                                        {{Form::label('blogStory', 'Blog Story')}}
+                                        {{Form::textarea('blogStory',$blog->blogStory,['class'=>'form-control', 'placeholder'=>'Blog Story'])}}
+            
+                                    </div>
+                                </div> 
 
 
                                 <div class="form-group">

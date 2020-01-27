@@ -43,7 +43,9 @@ class BlogController extends Controller
         [
             'blogTitle'=>'required',
             'blogDesc'=>'required',
-            'blogImage'=>'image | nullable | max:1999'
+            'blogStory'=>'required',
+
+            'blogImage'=>'image | nullable | max:1999',
         ]);
 
 
@@ -77,6 +79,8 @@ class BlogController extends Controller
         $blog=new Blog;
         $blog->blogTitle=$request->input('blogTitle');
         $blog->blogDesc=$request->input('blogDesc');
+        $blog->blogStory=$request->input('blogStory');
+
         $blog->blogImage=$fileNameToStore;
         $blog->save();
 
@@ -123,6 +127,8 @@ class BlogController extends Controller
         [
             'blogTitle'=>'required',
             'blogDesc'=>'required',
+            'blogStory'=>'required',
+
         ]);
 
  //handle image upload
@@ -152,6 +158,8 @@ class BlogController extends Controller
         $blog=Blog::find($id);
         $blog->blogTitle=$request->input('blogTitle');
         $blog->blogDesc=$request->input('blogDesc');
+        $blog->blogStory=$request->input('blogStory');
+
         if($request->hasfile('blogImage')){
 
             $blog->blogImage = $fileNameToStore;

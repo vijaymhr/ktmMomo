@@ -62,7 +62,12 @@ class PagesController extends Controller
                return view ('pages.blog')->with ('blogs',$blogs);     
           
         }
+        public function blogView()
+        {
 
+         
+            return view ('pages.blogView');        
+        }
 
      
 
