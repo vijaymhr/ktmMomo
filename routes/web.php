@@ -38,7 +38,7 @@ Route::get('/admin/orders', 'PagesController@orders');
 Route::get('/admin/contactUsManage', 'PagesController@contactUsManage');
 
 
-Route::get('/admin/blogs', 'PagesController@blogs');
+//Route::get('/admin/blogs', 'PagesController@blogs');
 
 //Route::get('/admin/foodGallery', 'PagesController@foodGallery');
 

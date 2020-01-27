@@ -7,7 +7,7 @@
     <div class="container">
       <div class="row no-gutters slider-text align-items-end justify-content-center">
         <div class="col-md-9 ftco-animate text-center mb-4">
-          <h1 class="mb-2 bread">Blog View</h1>
+          <h1 class="mb-2 bread">Blog</h1>
           <p class="breadcrumbs"><span class="mr-2"><a href="/">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Blogs <i class="ion-ios-arrow-forward"></i></span></p>
         </div>
       </div>
@@ -42,7 +42,10 @@
                               </div>
                             </div>
                           <p><span>{{$blog->blogDesc}}</span></p>
-                            <p><a href="/blogView" class="btn btn-primary">View Blog</a></p>
+
+
+
+                          <p><a href="/blogPost/{{$blog->id}}" class="btn btn-primary">View Blog</a></p>
                         </div>
                     </div>
                   </div>

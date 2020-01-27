@@ -98,7 +98,7 @@ class BlogController extends Controller
        
         $blog= Blog::find($id);
 
-        return view ('admin/pages/showFood')->with ('blog',$blog);
+        return view ('pages/blogView')->with ('blog',$blog);
     
     }
 

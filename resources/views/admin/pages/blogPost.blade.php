@@ -54,8 +54,8 @@
                             <div class="col-md-8 col sm-8">
 
                     <h3>
-                        <a href="/blogPost/{{$blog->id}}">{{$blog -> blogTitle}}
-                        </a>
+                        {{$blog -> blogTitle}}
+                        
                     </h3>
                     <small>{{$blog->blogDesc}}</small>
                     <br>
