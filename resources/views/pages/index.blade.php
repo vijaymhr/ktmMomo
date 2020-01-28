@@ -50,7 +50,8 @@
                                         </div>
                                       </div>
                                       <p><span>{{$food->foodDesc}}</span></p>
-                                      <p><a href="#" class="btn btn-primary">Order now</a></p>
+
+                                      <p><a href="/foods/{{$food->id}}" class="btn btn-primary">Order now</a></p>
                                   </div>
                               </div>
                             </div>

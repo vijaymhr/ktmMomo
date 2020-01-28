@@ -24,6 +24,7 @@ Route::get('/aboutUs', 'PagesController@about');
 Route::get('/contact', 'PagesController@contact');
 Route::get('/blog', 'PagesController@blog');
 Route::get('/blogView', 'PagesController@blogView');
+Route::get('/orderView', 'PagesController@orderView');
 
 
 

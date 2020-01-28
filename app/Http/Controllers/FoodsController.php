@@ -95,7 +95,7 @@ class FoodsController extends Controller
     {
         $food= Food::find($id);
 
-        return view ('admin/pages/showFood')->with ('food',$food);
+        return view ('pages/orderView')->with ('food',$food);
     }
 
     /**

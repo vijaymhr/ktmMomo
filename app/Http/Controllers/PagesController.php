@@ -69,6 +69,13 @@ class PagesController extends Controller
             return view ('pages.blogView');        
         }
 
+        public function orderView()
+        {
+
+         
+            return view ('pages.orderView');        
+        }
+
      
 
 //admin Pages Controller starts here

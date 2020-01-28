@@ -67,6 +67,42 @@
                         
 
                             </div>
+
+
+                            <div class="col-md-4 col sm-4">
+
+                                <a href="/foods/{{$food->id}}/edit" class="btn btn-success waves-effect"> 
+                                    <i class="material-icons">mode_edit</i>
+                                    <span>Edit this Item</span>
+                                </a>
+                            
+                            
+                            
+                            
+                                {!!Form::open(['action'=>['FoodsController@destroy', $food->id],'method'=>'POST', 'class'=>'pull-right'])!!}
+                            
+                            {{Form::hidden('_method', 'DELETE')}}
+                            {{Form::button('<i class="material-icons">delete_forever</i> <span>Delete this Item</span>', ['type'=>'submit','class'=>'btn btn-warning waves-effect', 'onclick'=>'return validateForm(this)'])}}
+                            
+                            {!! Form::close() !!}
+                            
+                            <script>
+                                       
+                            
+                                         function validateForm() {
+                                           
+                                            if ( confirm("Are you sure you wish to delete?") == false ) {
+                                                return false ;
+                                            } else {
+                                                return true ;
+                                            }                                }
+                            
+                                   </script>
+                            </div>
+
+
+
+
                     </div>
                     </div>
                         @endforeach
