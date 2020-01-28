@@ -16,7 +16,7 @@
                         </h2>
                         <ul class="header-dropdown m-r--5">
                                 <li>
-                                <a href="/foods/{{$food->id}}"><i class="material-icons">arrow_back</i></a>
+                                <a href="/foods"><i class="material-icons">arrow_back</i></a>
                                     </li>
                            
                         </ul>
