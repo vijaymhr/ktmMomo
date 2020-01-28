@@ -19,6 +19,8 @@
     <div class="container">
       <div class="row justify-content-center mb-5 pb-2">
         <div class="col-md-12 text-center heading-section ftco-animate fadeInUp ftco-animated">
+          @include('inc.messages')
+
           <h2 class="mb-4">Delicious Dumplings is our passion</h2>
         </div>
       </div>
@@ -92,7 +94,7 @@
                                           </div>
                                         </div>
                                       <p><span>{{$food->foodDesc}}</span></p>
-                                        <p><a href="#" class="btn btn-primary">Order now</a></p>
+                                        <p><a href="/foods/{{$food->id}}" class="btn btn-primary">Order now</a></p>
                                     </div>
                                 </div>
                               </div>

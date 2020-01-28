@@ -56,26 +56,25 @@
     </div>
   
 
-  {{-- {{action('FeedbackController@store')}}   # --}}
-  <form action="#" method="POST">
-    {{-- {{csrf_field()}} --}}
+  <form action="{{action('OrderController@store')}}" method="POST">
+    {{csrf_field()}}
 <div class="form-group">
 @include('inc.messages')
 
-<input type="text" name="fname" class="form-control" placeholder="Your Name" >
+<input type="text" name="cName" class="form-control" placeholder="Your Name" >
 </div>
 <div class="form-group">
-<input type="text" name="email" class="form-control" placeholder="Your Email" >
+<input type="text" name="cEmail" class="form-control" placeholder="Your Email" >
 </div>
 
 <div class="form-group">
-<input type="tel" name="mobile" class="form-control" placeholder="Mobile Number" >
+<input type="tel" name="cMobile" class="form-control" placeholder="Mobile Number" >
 </div>
 <div class="form-group">
-  <input type="number" name="quantity" class="form-control" placeholder="Quantity" min="1" max="5" >
+  <input type="number" name="cQuantity" class="form-control" placeholder="Quantity" min="1" max="5" >
   </div>
 <div class="form-group">
-<textarea name="message" cols="30" rows="7" class="form-control" placeholder="Message" >
+<textarea name="cMessage" cols="30" rows="7" class="form-control" placeholder="Message" >
 
 </textarea>
 </div>

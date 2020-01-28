@@ -8,6 +8,7 @@ use App\Info;
 use App\Gallery;
 use App\About;
 use App\Blog;
+use App\Order;
 
 class PagesController extends Controller
 {
