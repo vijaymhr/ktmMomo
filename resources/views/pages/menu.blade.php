@@ -24,41 +24,7 @@
           <h2 class="mb-4">Delicious Dumplings is our passion</h2>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-4 d-flex align-self-stretch ftco-animate text-center fadeInUp ftco-animated">
-          <div class="media block-6 services d-block">
-            <div class="icon d-flex justify-content-center align-items-center">
-              <span class="flaticon-cake"></span>
-            </div>
-            <div class="media-body p-2 mt-3">
-              <h3 class="heading">Birthday Party</h3>
-              <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-            </div>
-          </div>      
-        </div>
-        <div class="col-md-4 d-flex align-self-stretch ftco-animate text-center fadeInUp ftco-animated">
-          <div class="media block-6 services d-block">
-            <div class="icon d-flex justify-content-center align-items-center">
-              <span class="flaticon-meeting"></span>
-            </div>
-            <div class="media-body p-2 mt-3">
-              <h3 class="heading">Business Meetings</h3>
-              <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-            </div>
-          </div>    
-        </div>
-        <div class="col-md-4 d-flex align-self-stretch ftco-animate text-center fadeInUp ftco-animated">
-          <div class="media block-6 services d-block">
-            <div class="icon d-flex justify-content-center align-items-center">
-              <span class="flaticon-tray"></span>
-            </div>
-            <div class="media-body p-2 mt-3">
-              <h3 class="heading">Wedding Party</h3>
-              <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-            </div>
-          </div>      
-        </div>
-      </div>
+      
     </div>
   </section>
 
