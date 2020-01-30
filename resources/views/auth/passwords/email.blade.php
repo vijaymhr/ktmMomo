@@ -1,11 +1,15 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Reset Password') }}</div>
+<section class="home-slider owl-carousel js-fullheight">
+
+<div class="slider-item js-fullheight" style="background-image: url(/storage/cover_images/admin2.jpg); ">
+    <div class="overlay"></div>
+        <div class="col-md">
+            <br>
+            <br>
+            <br>
+                <div style="text-align: center; color:#FFFFFF">{{ __('Reset Password') }}</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -17,7 +21,7 @@
                     <form method="POST" action="{{ route('password.email') }}">
                         @csrf
 
-                        <div class="form-group row">
+                        <div class="form-group row" style="color:#FFFFFF">
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
 
                             <div class="col-md-6">
@@ -43,5 +47,5 @@
             </div>
         </div>
     </div>
-</div>
+</section>
 @endsection

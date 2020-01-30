@@ -46,7 +46,7 @@ Route::get('/admin/contactUsManage', 'PagesController@contactUsManage');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index');
 
 
 Route::resource('foods', 'FoodsController');
@@ -66,3 +66,7 @@ Route::resource('orderView', 'OrderController');
 
 
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

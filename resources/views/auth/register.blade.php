@@ -1,17 +1,21 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
+<section class="home-slider owl-carousel js-fullheight">
 
+<div class="slider-item js-fullheight" style="background-image: url(storage/cover_images/admin2.jpg); ">
+    <div class="overlay"></div>
+        <div class="col-md">
+<br>
                 <div class="card-body">
+                    <br>
+                
+                    <div style="text-align: center; color:#FFFFFF">{{ __('Register') }}</div>
+<br>
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
 
-                        <div class="form-group row">
+                        <div class="form-group row" style="color:#FFFFFF">
                             <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
 
                             <div class="col-md-6">
@@ -25,7 +29,7 @@
                             </div>
                         </div>
 
-                        <div class="form-group row">
+                        <div class="form-group row" style="color:#FFFFFF">
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
 
                             <div class="col-md-6">
@@ -39,7 +43,7 @@
                             </div>
                         </div>
 
-                        <div class="form-group row">
+                        <div class="form-group row" style="color:#FFFFFF">
                             <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
 
                             <div class="col-md-6">
@@ -53,7 +57,7 @@
                             </div>
                         </div>
 
-                        <div class="form-group row">
+                        <div class="form-group row" style="color:#FFFFFF">
                             <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
 
                             <div class="col-md-6">
@@ -72,6 +76,6 @@
                 </div>
             </div>
         </div>
-    </div>
-</div>
+</section>
+
 @endsection

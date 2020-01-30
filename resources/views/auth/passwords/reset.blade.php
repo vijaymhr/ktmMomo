@@ -1,13 +1,16 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Reset Password') }}</div>
+<section class="home-slider owl-carousel js-fullheight">
+
+    <div class="slider-item js-fullheight" style="background-image: url(storage/cover_images/admin2.jpg); ">
+        <div class="overlay"></div>
+            <div class="col-md">
+    <br>
 
                 <div class="card-body">
+                    <div class="text-align: center; color:#FFFFFF">{{ __('Reset Password') }}</div>
+
                     <form method="POST" action="{{ route('password.update') }}">
                         @csrf
 
@@ -59,7 +62,6 @@
                     </form>
                 </div>
             </div>
-        </div>
-    </div>
 </div>
+</section>
 @endsection

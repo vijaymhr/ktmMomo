@@ -3,7 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Food;
+use App\Info;
+use App\Gallery;
+use App\About;
+use App\Blog;
+use App\Order;
 class HomeController extends Controller
 {
     /**
@@ -23,6 +28,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
-    }
+        $foods= Food::all();
+
+          
+        return view ('pages.index')->with('foods',$foods);    }
 }
