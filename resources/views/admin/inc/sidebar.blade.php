@@ -9,12 +9,12 @@
             <div class="info-container">
                 <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 
-                    {{{ isset(Auth::user()->name) ? Auth::user()->name : Auth::user()->email }}}
+                    {{-- {{{ isset(Auth::user()->name) ? Auth::user()->name : Auth::user()->email }}} --}}
 
                 </div>
                 <div class="email">
 
-                    {{{ isset(Auth::user()->name) ? Auth::user()->email : Auth::user()->name }}}
+                    {{-- {{{ isset(Auth::user()->name) ? Auth::user()->email : Auth::user()->name }}} --}}
 
                 </div>
                 <div class="btn-group user-helper-dropdown">

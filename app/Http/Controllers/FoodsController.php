@@ -9,6 +9,21 @@ use Illuminate\Support\Facades\Storage;
 
 class FoodsController extends Controller
 {
+
+
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth', ['except'=>[ 'show']]);
+    }
+
+
+
+
     /**
      * Display a listing of the resource.
      *
@@ -77,6 +92,7 @@ class FoodsController extends Controller
         $food->foodDesc=$request->input('foodDesc');
         $food->price=$request->input('price');
         $food->cover_image=$fileNameToStore;
+        $food->user_id=auth()->user()->id;
         $food->save();
 
         return redirect('/foods')->with('success', 'New Food Item Added');

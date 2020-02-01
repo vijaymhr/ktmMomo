@@ -74,14 +74,15 @@
                   <div class="row">
           <div class="col-md-12 text-center">
 
-            <ul class="col-md-12 text-center ftco-footer-social list-unstyled float-md-left float-lft mt-3">
-                <li class="ftco-animate fadeInUp ftco-animated"><a href="#"><span class="icon-facebook"></span></a></li>
-               <li class="ftco-animate"><a href="https://www.instagram.com/ktmmomonz/"><span class="icon-instagram"></span></a></li>
-                </ul>
+            
 
 
             <div class="col-md-12 text-center">
   
+              <ul class="col-md-12 text-center ftco-footer-social list-unstyled float-md-left float-lft mt-3">
+                <li class="ftco-animate fadeInUp ftco-animated"><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/kathmandumomonz/"><span class="icon-facebook"></span></a></li>
+               <li class="ftco-animate"><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/ktmmomonz/"><span class="icon-instagram"></span></a></li>
+                </ul>
               <p>
                 
                     Copyright &copy;
