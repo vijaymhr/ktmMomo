@@ -18,4 +18,9 @@ class Food extends Model
     {
         return $this->belongsTo('App\User');
     }
+
+    // public function order()
+    // {
+    //     return $this->hasMany('App\order', 'food_id');
+    // }
 }

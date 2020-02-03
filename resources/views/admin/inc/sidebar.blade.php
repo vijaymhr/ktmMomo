@@ -57,7 +57,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="/admin/orders">
+                    <a href="/orders">
                         <i class="material-icons">shopping_cart</i>
                         <span>Orders</span>
                     </a>

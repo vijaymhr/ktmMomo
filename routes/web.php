@@ -58,6 +58,9 @@ Route::resource('foodGallery', 'GalleryController');
 Route::resource('about', 'AboutController');
 Route::resource('blogPost', 'BlogController');
 Route::resource('orderView', 'OrderController');
+Route::resource('orders', 'OrderAdminController');
+
+
 
 
 

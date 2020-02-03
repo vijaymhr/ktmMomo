@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Food;
 use Illuminate\Support\Facades\Storage;
+use App\Order;
 
 class FoodsController extends Controller
 {

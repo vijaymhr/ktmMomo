@@ -6,9 +6,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Order;
 use App\Food;
-use App\User;
 
-class OrderController extends Controller
+class OrderAdminController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,7 +16,8 @@ class OrderController extends Controller
      */
     public function index()
     {
-     return view('pages.orderView');
+        $orders= Order::orderBy('created_at','desc')-> paginate(10);
+        return view('admin/pages.orders')->with('orders',$orders);
     }
 
     /**
@@ -38,29 +38,7 @@ class OrderController extends Controller
      */
     public function store(Request $request)
     {
-        $this->validate($request,
-        [
-            'cName'=>'required',
-            'cEmail'=>'required',
-            'cMobile'=>'required',
-            'cQuantity'=>'required',
-            'cMessage'=>'nullable'
-        ]);
-
-
-        $order=new Order;
-        $order->cName=$request->input('cName');
-        $order->cEmail=$request->input('cEmail');
-        $order->cMobile=$request->input('cMobile');
-        $order->cQuantity=$request->input('cQuantity');
-        $order->cMessage=$request->input('cMessage');
-       // $order->food_id=pages()->food()->id;
-       //$food->user_id=auth()->user()->id;
-        $order->user_id='1';
-
-        $order->save();
-        return redirect('/menu')->with('success', 'Thank You! We have Received your order.');
-        
+        //
     }
 
     /**
@@ -71,7 +49,9 @@ class OrderController extends Controller
      */
     public function show($id)
     {
-        //
+        $order= Order::find($id);
+
+        return view ('admin/pages.showOrder')->with ('order',$order);
     }
 
     /**
@@ -105,6 +85,10 @@ class OrderController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $order=Order::find($id);
+
+        $order->delete();
+        return redirect('/orders')->with('success', 'Order Canceled and Deleted Permanently');
+
     }
 }

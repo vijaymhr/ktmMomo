@@ -13,4 +13,12 @@ class Order extends Model
 
     //timestamp
     public $timestamps =true;
+
+
+    public function food()
+    {
+        return $this->belongsTo('App\Food');
+    }
+
+
 }
