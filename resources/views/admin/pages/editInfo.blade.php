@@ -81,7 +81,7 @@
                             
 
                                 {{Form::hidden('_method', 'PUT')}}
-                                {{Form::button('<i class="material-icons">save</i> <span>Update Opening Hours</span>', ['type'=>'submit','class'=>'btn btn-success waves-effect'])}}
+                                {{Form::button('<i class="material-icons">save</i> <span>Update the Address</span>', ['type'=>'submit','class'=>'btn btn-success waves-effect'])}}
 
                         {!! Form::close() !!}
 

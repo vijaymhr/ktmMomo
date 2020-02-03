@@ -47,7 +47,7 @@
                         <div class="body">
     
                         <h3>
-                            <a href="/timings/{{$timing->id}}">{{$timing -> day}}
+                            <a href="/timings/{{$timing->id}}/edit">{{$timing -> day}}
                             </a>
                         </h3>
                         <small>Time: {{$timing->time}}</small>
@@ -55,8 +55,6 @@
 
                         <small>Modified on: {{$timing->updated_at}}</small>
 
-                            
-    
                             
                         </div>
                             @endforeach

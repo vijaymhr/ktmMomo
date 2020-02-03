@@ -10,6 +10,18 @@ use Illuminate\Support\Facades\Storage;
 
 class GalleryController extends Controller
 {
+
+
+     /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth', ['except'=>[ 'show']]);
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -74,6 +86,7 @@ class GalleryController extends Controller
         $gallery->imageTitle=$request->input('imageTitle');
        
         $gallery->photo=$fileNameToStore;
+        $gallery->user_id=auth()->user()->id;
         $gallery->save();
 
         return redirect('/foodGallery')->with('success', 'New Photo Added');

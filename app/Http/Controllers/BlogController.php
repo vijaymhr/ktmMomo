@@ -9,6 +9,20 @@ use Illuminate\Support\Facades\Storage;
 
 class BlogController extends Controller
 {
+
+
+
+        /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth', ['except'=>[ 'show']]);    }
+
+
+
     /**
      * Display a listing of the resource.
      *
@@ -82,6 +96,7 @@ class BlogController extends Controller
         $blog->blogStory=$request->input('blogStory');
 
         $blog->blogImage=$fileNameToStore;
+        $blog->user_id=auth()->user()->id;
         $blog->save();
 
         return redirect('/blogPost')->with('success', 'New Blog Added');

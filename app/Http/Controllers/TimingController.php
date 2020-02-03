@@ -7,6 +7,20 @@ use Illuminate\Http\Request;
 use App\Timing;
 class TimingController extends Controller
 {
+
+
+
+     /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth', ['except'=>[ 'show']]);
+    }
+
+
     /**
      * Display a listing of the resource.
      *

@@ -41,7 +41,7 @@ class FeedbackController extends Controller
             'fname'=>'required',
             'email'=>'required',
             'mobile'=>'required',
-            'message'=>'required'
+            'message'=>'required',
         ]);
 
         $feedback=new Feedback;
@@ -49,7 +49,7 @@ class FeedbackController extends Controller
         $feedback->email=$request->input('email');
         $feedback->mobile=$request->input('mobile');
         $feedback->message=$request->input('message');
-
+$feedback->user_id='1';
         $feedback->save();
         return redirect('/contact')->with('success', 'Thank you for your feedback.');
 
