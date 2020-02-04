@@ -70,12 +70,12 @@ class PagesController extends Controller
             return view ('pages.blogView');        
         }
 
-        public function orderView()
-        {
+        // public function orderView()
+        // {
 
          
-            return view ('pages.orderView');        
-        }
+        //     return view ('pages.orderView');        
+        // }
 
      
 
