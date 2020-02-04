@@ -106,7 +106,7 @@
                         <div class="header">{{$blogs->links()}}</div>
                     @else
 
-                        <p> No Food Items Available. Please Add Food Items.</p>
+                        <p> No Blogs Available. Please Add Some Blogs.</p>
                     @endif
                     
                 </div>

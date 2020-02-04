@@ -87,7 +87,7 @@
                 
                     Copyright &copy;
                     <script>document.write(new Date().getFullYear());
-                    </script> All rights reserved |  
+                    </script> All rights reserved |  Developed by: Vijay Maharjan | Sushan Kiran Pradhan | Andrii Krysko | 
                     <a href="/" target="_blank">Kathmandu Mo:Mo House LTD.
                     </a>
     </p>
