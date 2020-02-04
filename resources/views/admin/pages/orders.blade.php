@@ -42,7 +42,7 @@
                             <div class="col-md-8 col sm-8">
 
                     <h3>
-                        <a href="/orders/{{$order->id}}">{{$order -> cMobile}}
+                        <a href="/orders/{{$order->id}}">{{$order -> cName}} / {{$order->foodName}}
                         </a>
                     </h3>
                     <small>Full Name: {{$order->cName}}</small>

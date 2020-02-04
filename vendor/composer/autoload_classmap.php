@@ -29,6 +29,7 @@ return array(
     'App\\Http\\Controllers\\GalleryController' => $baseDir . '/app/Http/Controllers/GalleryController.php',
     'App\\Http\\Controllers\\HomeController' => $baseDir . '/app/Http/Controllers/HomeController.php',
     'App\\Http\\Controllers\\InfoController' => $baseDir . '/app/Http/Controllers/InfoController.php',
+    'App\\Http\\Controllers\\OrderAdminController' => $baseDir . '/app/Http/Controllers/OrderAdminController.php',
     'App\\Http\\Controllers\\OrderController' => $baseDir . '/app/Http/Controllers/OrderController.php',
     'App\\Http\\Controllers\\PagesController' => $baseDir . '/app/Http/Controllers/PagesController.php',
     'App\\Http\\Controllers\\TimingController' => $baseDir . '/app/Http/Controllers/TimingController.php',

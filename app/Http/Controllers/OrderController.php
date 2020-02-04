@@ -44,11 +44,15 @@ class OrderController extends Controller
             'cEmail'=>'required',
             'cMobile'=>'required',
             'cQuantity'=>'required',
-            'cMessage'=>'nullable'
+            'cMessage'=>'nullable',
+            'foodName'=>'nullable'
+
         ]);
 
 
         $order=new Order;
+        $order->foodName=$request->input('foodName');
+
         $order->cName=$request->input('cName');
         $order->cEmail=$request->input('cEmail');
         $order->cMobile=$request->input('cMobile');

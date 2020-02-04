@@ -12,7 +12,7 @@
                 <div class="card">
                     <div class="header">
                         <h2>
-                            {{$order->cName}}
+                            {{$order->cName}} / {{$order->foodName}}
                                 </h2>
 
 
@@ -51,7 +51,7 @@
                                          <td>{{$order->cMobile}}</td>
                                          <td>{{$order->cQuantity}}</td>
 
-                                         <td>{{$order->foodTitle}}</td>
+                                         <td>{{$order->foodName}}</td>
 
                                          <td>{{$order->cMessage}}</td>
                                          

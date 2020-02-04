@@ -58,11 +58,19 @@
 
   <form action="{{action('OrderController@store')}}" method="POST">
     {{csrf_field()}}
-<div class="form-group">
-@include('inc.messages')
 
+    @include('inc.messages')
+
+
+    <div class="form-group">
+      <input type="text" name="foodName" class="form-control" value="{{$food->foodTitle}}" readonly >
+      </div>
+
+
+<div class="form-group">
 <input type="text" name="cName" class="form-control" placeholder="Your Name" >
 </div>
+
 <div class="form-group">
 <input type="text" name="cEmail" class="form-control" placeholder="Your Email" >
 </div>
@@ -78,6 +86,9 @@
 
 </textarea>
 </div>
+
+
+
 <div class="form-group">
 <input type="submit" value="Confirm Order" class="btn btn-primary py-3 px-5">
 

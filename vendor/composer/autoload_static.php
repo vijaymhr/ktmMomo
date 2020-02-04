@@ -455,6 +455,7 @@ class ComposerStaticInitae906ade396d8818959501fafe729e94
         'App\\Http\\Controllers\\GalleryController' => __DIR__ . '/../..' . '/app/Http/Controllers/GalleryController.php',
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
         'App\\Http\\Controllers\\InfoController' => __DIR__ . '/../..' . '/app/Http/Controllers/InfoController.php',
+        'App\\Http\\Controllers\\OrderAdminController' => __DIR__ . '/../..' . '/app/Http/Controllers/OrderAdminController.php',
         'App\\Http\\Controllers\\OrderController' => __DIR__ . '/../..' . '/app/Http/Controllers/OrderController.php',
         'App\\Http\\Controllers\\PagesController' => __DIR__ . '/../..' . '/app/Http/Controllers/PagesController.php',
         'App\\Http\\Controllers\\TimingController' => __DIR__ . '/../..' . '/app/Http/Controllers/TimingController.php',
