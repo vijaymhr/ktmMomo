@@ -28,11 +28,11 @@ Route::get('/orderView', 'PagesController@orderView');
 
 
 
-Route::get('/admin/login', 'PagesController@login');
+// Route::get('/admin/login', 'PagesController@login');
 
-Route::get('/admin', 'PagesController@dashboard');
+Route::get('/dashboard', 'PagesController@dashboard');
 
-Route::get('/dash', 'AdminController@dashboard')->name('dash');
+// Route::get('/dash', 'AdminController@dashboard')->name('dash');
 
 
 Route::get('/admin/orders', 'PagesController@orders');
@@ -59,6 +59,8 @@ Route::resource('about', 'AboutController');
 Route::resource('blogPost', 'BlogController');
 Route::resource('orderView', 'OrderController');
 Route::resource('orders', 'OrderAdminController');
+Route::resource('dashboard', 'AdminController');
+
 
 
 

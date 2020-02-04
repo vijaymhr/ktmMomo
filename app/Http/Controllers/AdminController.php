@@ -4,14 +4,25 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\User;
 
 class AdminController extends Controller
 {
     //
 
-
-    public function dashboard()
+    
+   /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
     {
-        return view('dash');
+        $this->middleware('auth');
+    }
+
+    public function index()
+    {
+        return view('admin/pages.dashboard');
     }
 }
