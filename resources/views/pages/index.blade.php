@@ -26,7 +26,11 @@
       <div class="container">
       <div class="ftco-search">
                   <div class="row">
-            <div class="col-md-12 tab-wrap">  
+            <div class="col-md-12 tab-wrap">
+              <div class="col-md-12 text-center heading-section ftco-animate fadeInUp ftco-animated">
+      
+                <h2 class="mb-4">Our Recent Items</h2>
+              </div>  
               <div class="tab-content" id="v-pills-tabContent">
                 <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="day-1-tab">
                     <div class="row no-gutters d-flex align-items-stretch">
