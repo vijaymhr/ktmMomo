@@ -44,12 +44,12 @@
         <div class="menu">
             <ul class="list">
                 <li class="header">MAIN NAVIGATION</li>
-                <li class="active">
+                {{-- <li class="active">
                     <a href="/dashboard">
                         <i class="material-icons">home</i>
                         <span>Dashboard</span>
                     </a>
-                </li>
+                </li> --}}
                 <li>
                     <a href="/foods">
                         <i class="material-icons">local_dining</i>
