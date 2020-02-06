@@ -1,5 +1,7 @@
 <?php
-
+use Illuminate\Http\Request;
+use App\Mail\SendMail;
+use Illuminate\Support\Facades\Mail;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -60,14 +62,6 @@ Route::resource('blogPost', 'BlogController');
 Route::resource('orderView', 'OrderController');
 Route::resource('orders', 'OrderAdminController');
 Route::resource('dashboard', 'AdminController');
-
-
-
-
-
-
-
-
 
 
 

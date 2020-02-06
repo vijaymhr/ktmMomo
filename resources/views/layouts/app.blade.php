@@ -55,8 +55,6 @@
 
 
         @include('inc.navbar')
-        @include('inc.feedback_modal')
-        @include('inc.signup')
 
 
         @yield('content')

@@ -10,6 +10,9 @@ use App\About;
 use App\Blog;
 use App\Order;
 
+use App\Mail\SendMail;
+use Illuminate\Support\Facades\Mail;
+
 class PagesController extends Controller
 {
     public function index()

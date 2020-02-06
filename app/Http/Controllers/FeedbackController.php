@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Feedback;
+use App\Mail\SendMail;
 
 class FeedbackController extends Controller
 {
@@ -51,6 +52,10 @@ class FeedbackController extends Controller
         $feedback->message=$request->input('message');
 $feedback->user_id='1';
         $feedback->save();
+
+
+
+        
         return redirect('/contact')->with('success', 'Thank you for your feedback.');
 
 
@@ -100,4 +105,9 @@ $feedback->user_id='1';
     {
         //
     }
+
+
+
+   
+ 
 }

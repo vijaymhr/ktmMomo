@@ -77,11 +77,11 @@
                 <div class="header">
                 {{-- <a href="/foods/{{$food->id}}/edit" class="btn btn-success waves-effect">  --}}
 
-                <a href="#" class="btn btn-success waves-effect"> 
+                {{-- <a href="#" class="btn btn-success waves-effect"> 
                     <i class="material-icons">mode_edit</i>
                     <span>Confirm Order</span>
-                </a>
-
+                </a> --}}
+{{-- 
                 {!!Form::open(['action'=>['OrderAdminController@destroy', $order->id],'method'=>'POST', 'class'=>'pull-right'])!!}
 
                     {{Form::hidden('_method', 'DELETE')}}
@@ -114,7 +114,7 @@
 
    
 
-                           </script>
+                           </script> --}}
 
                 </div>
                 
