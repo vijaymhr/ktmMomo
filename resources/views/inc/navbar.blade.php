@@ -16,7 +16,7 @@
 	        	<li class="nav-item active"><a href="/" class="nav-link">Home</a></li>
 	        	<li class="nav-item"><a href="/gallery" class="nav-link">Gallery</a></li>
 	        	<li class="nav-item"><a href="/aboutUs" class="nav-link">About Us</a></li>
-	        	<li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
+	        	<li class="nav-item"><a href="/contact" class="nav-link">Contact Us</a></li>
 			  <li class="nav-item"><a href="/blog" class="nav-link">Blog</a></li>
 
 

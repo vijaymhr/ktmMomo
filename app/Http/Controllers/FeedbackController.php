@@ -39,7 +39,7 @@ class FeedbackController extends Controller
         $this->validate($request,
         [
             'fname'=>'required',
-            'email'=>'required',
+            'email'=>'required | email',
             'mobile'=>'required',
             'message'=>'required',
         ]);
